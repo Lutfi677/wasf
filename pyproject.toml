@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wasf"
+version = "0.0.0"
+description = "Bilingual Arabic and English copilot that helps a person remediate inaccessible PDFs towards WCAG 2.1 AA."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Loutfi Alsamarah" }]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "ruff>=0.6,<1",
+    "detect-secrets==1.5.0",
+]
+azure = [
+    "azure-identity>=1.17.0,<2",
+    "azure-ai-projects>=1.0.0,<3",
+    "azure-ai-contentunderstanding>=1.1.0,<2",
+    "openai>=1.60.0,<4",
+]
+samples = [
+    "reportlab==5.1.0",
+    "pikepdf==10.17.0",
+    "matplotlib==3.11.2",
+    "numpy==2.5.4",
+    "Pillow==13.0.0",
+    "qrcode==8.2",
+    "arabic-reshaper==3.1.0",
+    "python-bidi==0.6.12",
+    "pypdfium2==5.14.0",
+]
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["eval/samples_tools"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"eval/samples_tools/make_samples.py" = ["E501", "I001", "B905"]

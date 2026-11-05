@@ -1,0 +1,166 @@
+:root {
+  color-scheme: light dark;
+
+  /* ---- colour: light is the default ---- */
+  --wasf-color-paper: #F7F8F5;
+  --wasf-color-surface: #FFFFFF;
+  --wasf-color-surface-sunk: #EEF1EC;
+  --wasf-color-line: #7A8B88;
+  --wasf-color-line-soft: #D6DDD9;
+  --wasf-color-ink: #12201F;
+  --wasf-color-ink-muted: #3E504E;
+  --wasf-color-teal: #0B6561;
+  --wasf-color-teal-strong: #084B48;
+  --wasf-color-teal-tint: #D5EBE8;
+  --wasf-color-on-teal: #FFFFFF;
+  --wasf-color-focus: #1B4FD6;
+  --wasf-color-proposed: #3E504E;
+  --wasf-color-proposed-bg: #E4E9E6;
+  --wasf-color-approved: #1D6B3B;
+  --wasf-color-approved-bg: #DDF0E3;
+  --wasf-color-edited: #1F4E8C;
+  --wasf-color-edited-bg: #DCE8F7;
+  --wasf-color-rejected: #9B2C2C;
+  --wasf-color-rejected-bg: #F6DEDE;
+  --wasf-color-escalated: #8A4B08;
+  --wasf-color-escalated-bg: #FBEBD0;
+
+  /* ---- space (4 px grid) ---- */
+  --wasf-space-0: 0rem;
+  --wasf-space-1: 0.25rem;
+  --wasf-space-2: 0.5rem;
+  --wasf-space-3: 0.75rem;
+  --wasf-space-4: 1rem;
+  --wasf-space-5: 1.5rem;
+  --wasf-space-6: 2rem;
+  --wasf-space-7: 3rem;
+  --wasf-space-8: 4rem;
+
+  /* ---- radius ---- */
+  --wasf-radius-sm: 4px;
+  --wasf-radius-md: 8px;
+  --wasf-radius-lg: 12px;
+  --wasf-radius-pill: 999px;
+
+  /* ---- type ---- */
+  --wasf-text-xs: 0.75rem;
+  --wasf-text-sm: 0.875rem;
+  --wasf-text-md: 1rem;
+  --wasf-text-lg: 1.125rem;
+  --wasf-text-xl: 1.25rem;
+  --wasf-text-2xl: 1.5rem;
+  --wasf-text-3xl: 1.875rem;
+  --wasf-text-4xl: 2.25rem;
+  --wasf-text-5xl: 3rem;
+  --wasf-font-sans-latin: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wasf-font-sans-arabic: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --wasf-font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  --wasf-font-body: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  --wasf-weight-regular: 400;
+  --wasf-weight-strong: 600;
+  --wasf-leading-latin: 1.55;
+  --wasf-leading-arabic: 1.8;      /* Arabic needs room for stacked marks and descenders */
+
+  /* ---- focus ---- */
+  --wasf-focus-width: 3px;
+  --wasf-focus-offset: 2px;
+  --wasf-focus-ring: var(--wasf-focus-width) solid var(--wasf-color-focus);
+
+  /* ---- targets ---- */
+  --wasf-target-min: 24px;
+  --wasf-target-comfortable: 44px;
+
+  /* ---- motion ---- */
+  --wasf-motion-fast: 120ms;
+  --wasf-motion-base: 200ms;
+  --wasf-motion-slow: 320ms;
+}
+
+/* Dark follows the operating system unless the page pins a theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --wasf-color-paper: #0C1514;
+    --wasf-color-surface: #142120;
+    --wasf-color-surface-sunk: #0A1110;
+    --wasf-color-line: #6F8481;
+    --wasf-color-line-soft: #263836;
+    --wasf-color-ink: #E7EFEE;
+    --wasf-color-ink-muted: #B4C4C1;
+    --wasf-color-teal: #5CC8C0;
+    --wasf-color-teal-strong: #8EDDD7;
+    --wasf-color-teal-tint: #173432;
+    --wasf-color-on-teal: #06201F;
+    --wasf-color-focus: #8FB0FF;
+    --wasf-color-proposed: #B4C4C1;
+    --wasf-color-proposed-bg: #223432;
+    --wasf-color-approved: #7BD59A;
+    --wasf-color-approved-bg: #17301F;
+    --wasf-color-edited: #8DB7F0;
+    --wasf-color-edited-bg: #172A44;
+    --wasf-color-rejected: #F29A9A;
+    --wasf-color-rejected-bg: #3A1A1A;
+    --wasf-color-escalated: #F0B764;
+    --wasf-color-escalated-bg: #3A2810;
+  }
+}
+:root[data-theme="dark"] {
+  --wasf-color-paper: #0C1514;
+  --wasf-color-surface: #142120;
+  --wasf-color-surface-sunk: #0A1110;
+  --wasf-color-line: #6F8481;
+  --wasf-color-line-soft: #263836;
+  --wasf-color-ink: #E7EFEE;
+  --wasf-color-ink-muted: #B4C4C1;
+  --wasf-color-teal: #5CC8C0;
+  --wasf-color-teal-strong: #8EDDD7;
+  --wasf-color-teal-tint: #173432;
+  --wasf-color-on-teal: #06201F;
+  --wasf-color-focus: #8FB0FF;
+  --wasf-color-proposed: #B4C4C1;
+  --wasf-color-proposed-bg: #223432;
+  --wasf-color-approved: #7BD59A;
+  --wasf-color-approved-bg: #17301F;
+  --wasf-color-edited: #8DB7F0;
+  --wasf-color-edited-bg: #172A44;
+  --wasf-color-rejected: #F29A9A;
+  --wasf-color-rejected-bg: #3A1A1A;
+  --wasf-color-escalated: #F0B764;
+  --wasf-color-escalated-bg: #3A2810;
+}
+
+/* Reduced motion: durations collapse to zero, so transitions still run but are instant. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --wasf-motion-fast: 0ms;
+    --wasf-motion-base: 0ms;
+    --wasf-motion-slow: 0ms;
+  }
+}
+
+/* ---- script-aware text defaults ---- */
+body {
+  font-family: var(--wasf-font-body);
+  font-size: var(--wasf-text-md);
+  line-height: var(--wasf-leading-latin);
+  color: var(--wasf-color-ink);
+  background: var(--wasf-color-paper);
+}
+:lang(ar) {
+  line-height: var(--wasf-leading-arabic);
+  letter-spacing: 0;               /* never track Arabic: it breaks letter joins */
+  font-style: normal;              /* Arabic has no italic; synthetic slant distorts it */
+  text-transform: none;
+}
+
+/* ---- focus: one rule for the whole product ---- */
+:focus-visible {
+  outline: var(--wasf-focus-ring);
+  outline-offset: var(--wasf-focus-offset);
+}
+
+/* ---- finding state chips: colour plus a text label, never colour alone ---- */
+.wasf-state-proposed { color: var(--wasf-color-proposed); background: var(--wasf-color-proposed-bg); }
+.wasf-state-approved { color: var(--wasf-color-approved); background: var(--wasf-color-approved-bg); }
+.wasf-state-edited { color: var(--wasf-color-edited); background: var(--wasf-color-edited-bg); }
+.wasf-state-rejected { color: var(--wasf-color-rejected); background: var(--wasf-color-rejected-bg); }
+.wasf-state-escalated { color: var(--wasf-color-escalated); background: var(--wasf-color-escalated-bg); }

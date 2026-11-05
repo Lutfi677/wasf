@@ -62,9 +62,12 @@ def model_call(credential, model: str) -> bool:
             store=False,
         )
         usage = reply.usage
-        print(f"      reply: {reply.output_text.strip()!r} | tokens in={usage.input_tokens} "
-              f"out={usage.output_tokens} total={usage.total_tokens}")
-        log_cost("model", model, usage.input_tokens, usage.output_tokens, None, "smoke test")
+        tokens_in = usage.input_tokens if usage is not None else None
+        tokens_out = usage.output_tokens if usage is not None else None
+        tokens_total = usage.total_tokens if usage is not None else None
+        print(f"      reply: {reply.output_text.strip()!r} | tokens in={tokens_in} "
+              f"out={tokens_out} total={tokens_total}")
+        log_cost("model", model, tokens_in, tokens_out, None, "smoke test")
         return True
     except Exception as exc:  # noqa: BLE001 - a smoke test must report, not crash
         print(f"      FAILED: {type(exc).__name__}: {exc}\n      Hint: {hint_for(exc)}")
@@ -80,10 +83,13 @@ def layout_call(credential, pdf_path: pathlib.Path) -> bool:
             endpoint=os.environ["CONTENTUNDERSTANDING_ENDPOINT"], credential=credential)
         poller = client.begin_analyze_binary(analyzer_id="prebuilt-layout", binary_input=pdf_path.read_bytes())
         content = poller.result().contents[0]
-        pages = len(content.pages or [])
-        print(f"      layout: {pages} pages, {len(content.tables or [])} tables, {len(content.figures or [])} figures")
+        pages = len(getattr(content, "pages", None) or [])
+        tables = len(getattr(content, "tables", None) or [])
+        figures = len(getattr(content, "figures", None) or [])
+        print(f"      layout: {pages} pages, {tables} tables, {figures} figures")
         usage = getattr(poller, "usage", None)
-        usage_note = usage.as_dict() if hasattr(usage, "as_dict") else usage
+        as_dict = getattr(usage, "as_dict", None)
+        usage_note = as_dict() if callable(as_dict) else usage
         print(f"      usage reported by the SDK: {usage_note}")
         log_cost("content-understanding", "prebuilt-layout", None, None, pages, f"smoke test; usage={usage_note}")
         return True

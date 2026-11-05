@@ -11,12 +11,21 @@ requires-python = ">=3.12"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Loutfi Alsamarah" }]
+dependencies = [
+    "pydantic>=2.7,<3",
+    "fastapi>=0.115,<1",
+    "pikepdf>=10,<11",
+    "pypdfium2>=5,<6",
+    "numpy>=2,<3",
+    "python-multipart>=0.0.9,<1",
+]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8,<10",
     "ruff>=0.6,<1",
     "detect-secrets==1.5.0",
+    "httpx>=0.27,<1",
 ]
 azure = [
     "azure-identity>=1.17.0,<2",
@@ -41,7 +50,7 @@ packages = []
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["eval/samples_tools"]
+pythonpath = [".", "eval/samples_tools"]
 
 [tool.ruff]
 line-length = 140
@@ -52,3 +61,6 @@ select = ["E", "F", "I", "B"]
 
 [tool.ruff.lint.per-file-ignores]
 "eval/samples_tools/make_samples.py" = ["E501", "I001", "B905"]
+
+[tool.pyright]
+ignore = ["eval/samples_tools/make_samples.py"]

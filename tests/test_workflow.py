@@ -42,7 +42,9 @@ def test_every_action_is_pinned_by_full_sha():
 
 def test_python_version_meets_requires_python():
     pyproject = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
-    minimum = tuple(int(part) for part in re.match(r">=\s*(\d+)\.(\d+)", pyproject["project"]["requires-python"]).groups())
+    declared = re.match(r">=\s*(\d+)\.(\d+)", pyproject["project"]["requires-python"])
+    assert declared is not None
+    minimum = tuple(int(part) for part in declared.groups())
     chosen = re.search(r'python-version:\s*"(\d+)\.(\d+)"', workflow_text())
     assert chosen is not None
     assert tuple(int(part) for part in chosen.groups()) >= minimum

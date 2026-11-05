@@ -1,0 +1,160 @@
+{
+  "01_county_budget_summary.pdf": {
+    "images": [
+      [
+        [
+          600,
+          600
+        ],
+        [
+          1560,
+          26
+        ]
+      ],
+      [
+        [
+          1300,
+          560
+        ],
+        [
+          1300,
+          660
+        ],
+        [
+          1560,
+          26
+        ]
+      ],
+      []
+    ],
+    "language": null,
+    "pages": 3,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "95ac531e055ee3f6b07e2d6f6f78eae2564a9c3f727ab8768adb2ed50151ead5",
+    "title": null
+  },
+  "02_college_fee_schedule.pdf": {
+    "images": [
+      [],
+      []
+    ],
+    "language": null,
+    "pages": 2,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "4eaea7a257c1ec55b4bbad30602017025e30a3cec94f09e1a23d29d92fba962c",
+    "title": null
+  },
+  "03_welcome_week_flyer.pdf": {
+    "images": [
+      [
+        [
+          420,
+          420
+        ],
+        [
+          1500,
+          720
+        ]
+      ]
+    ],
+    "language": null,
+    "pages": 1,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "2e9f0e11bd57bd455e4c0e2ba5f5cfbf1451a2f1d2600f6ab514622c811c3bb6",
+    "title": "Microsoft Word - WelcomeWeek_flyer_FINAL_v3.docx"
+  },
+  "04_council_minutes_with_pii.pdf": {
+    "images": [
+      [],
+      [
+        [
+          700,
+          220
+        ]
+      ]
+    ],
+    "language": null,
+    "pages": 2,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "2543451326d93d12f82e1d1ba40999a014ebb04bb5fbc22edfb9f83a4d793254",
+    "title": "Microsoft Word - Minutes 03-12-26 DRAFT.doc"
+  },
+  "05_planning_notice_fax_scan.pdf": {
+    "images": [
+      [
+        [
+          1700,
+          2200
+        ]
+      ],
+      [
+        [
+          1700,
+          2200
+        ]
+      ]
+    ],
+    "language": null,
+    "pages": 2,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+    "title": null
+  },
+  "06_library_report_injection_fixture.pdf": {
+    "images": [
+      [
+        [
+          1300,
+          580
+        ]
+      ],
+      [
+        [
+          1400,
+          620
+        ]
+      ]
+    ],
+    "language": null,
+    "pages": 2,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "a7568aa0dc715c739e277abf14890dab4a7d186ac318f38ddaf47d7f246637f9",
+    "title": "Document1"
+  },
+  "07_arabic_circular_two_column.pdf": {
+    "images": [
+      [
+        [
+          600,
+          600
+        ]
+      ],
+      [
+        [
+          1300,
+          580
+        ]
+      ]
+    ],
+    "language": null,
+    "pages": 2,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "d8925e65948fa16b0db80a2d3ce95e794b9b8f80f305317d30711d9bc62f7f6a",
+    "title": null
+  },
+  "08_bilingual_service_request_form.pdf": {
+    "images": [
+      [
+        [
+          600,
+          600
+        ]
+      ]
+    ],
+    "language": null,
+    "pages": 1,
+    "tag_state": "untagged",
+    "text_tokens_sha256": "bae7691517b798abdbe01d8513f0c407142659b2b12a374803d232d060c26439",
+    "title": "form_v2.indd"
+  }
+}

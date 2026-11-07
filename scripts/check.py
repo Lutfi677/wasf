@@ -1,4 +1,6 @@
+import os
 import pathlib
+import shutil
 import subprocess
 import sys
 
@@ -8,6 +10,7 @@ TOOLS = ROOT / "eval" / "samples_tools"
 
 COMMANDS = (
     [sys.executable, "-m", "ruff", "check", "."],
+    [sys.executable, "-m", "pyright", "--pythonpath", sys.executable],
     [sys.executable, "-m", "pytest"],
 )
 
@@ -25,6 +28,13 @@ def main() -> int:
     else:
         print("Sample checkers skipped: eval/samples has not been generated. Run: python eval/samples_tools/make_samples.py")
     status = 0
+    dotnet = shutil.which("dotnet")
+    if dotnet:
+        commands.append([dotnet, "build", str(ROOT / "AppHost"), "--nologo"])
+    else:
+        print("C# build skipped: dotnet is not on the PATH. Install the .NET SDK named in global.json")
+        if os.environ.get("CI"):
+            status = 1
     for command in commands:
         code = subprocess.call(command, cwd=ROOT)
         if code and not status:

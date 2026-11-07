@@ -1,0 +1,94 @@
+@page "/documents/{DocumentId:int}"
+@inject WasfClient Api
+@inject NavigationManager Navigation
+@inject ApiLocation Location
+
+<PageTitle>Document @DocumentId · Wasf review</PageTitle>
+
+<p><a href="">All documents</a></p>
+<h1>Document @DocumentId</h1>
+
+@if (findings is null)
+{
+    <p>No document with this id.</p>
+}
+else
+{
+    <p class="wasf-meta">@findings.Count findings, @findings.Count(f => f.State == State.Proposed) still proposed</p>
+    <p><a href="@($"{Location.Url.TrimEnd('/')}/documents/{DocumentId}/report")">Report for document @DocumentId (Markdown)</a></p>
+    <form method="post" @formname="decisions" @onsubmit="Decide">
+        <AntiforgeryToken />
+        <div style="display: grid; gap: var(--wasf-space-4);">
+            @foreach (var finding in findings)
+            {
+                <article class="wasf-card" aria-labelledby="finding-@finding.Id">
+                    <div class="wasf-card__head">
+                        <h2 id="finding-@finding.Id">@finding.Defect</h2>
+                        <span class="wasf-chip wasf-chip--@Lower(finding.State)">@finding.State</span>
+                    </div>
+                    <p class="wasf-meta">Finding @finding.Id · @PageText(finding) · source: @Lower(finding.Source)</p>
+                    @if (!string.IsNullOrEmpty(finding.Evidence))
+                    {
+                        <p dir="auto" lang="@(IsArabic(finding.Evidence) ? "ar" : null)">@finding.Evidence</p>
+                    }
+                    <div class="wasf-actions">
+                        <button type="submit" class="wasf-btn wasf-btn--primary" name="Choice" value="@($"{finding.Id}:approved")" aria-label="@($"Approve finding {finding.Id}, {finding.Defect}")">Approve</button>
+                        <button type="submit" class="wasf-btn wasf-btn--reject" name="Choice" value="@($"{finding.Id}:rejected")" aria-label="@($"Reject finding {finding.Id}, {finding.Defect}")">Reject</button>
+                    </div>
+                </article>
+            }
+        </div>
+    </form>
+}
+
+@code {
+    [Parameter]
+    public int DocumentId { get; set; }
+
+    [SupplyParameterFromForm(FormName = "decisions")]
+    public string? Choice { get; set; }
+
+    private List<StoredFinding>? findings;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            findings = await Api.Documents[DocumentId].Findings.GetAsync() ?? [];
+        }
+        catch (ApiException error) when (error.ResponseStatusCode == 404)
+        {
+            findings = null;
+        }
+    }
+
+    private async Task Decide()
+    {
+        if (findings is null || Choice?.Split(':') is not [var id, var choice] || !int.TryParse(id, out var findingId))
+        {
+            return;
+        }
+        if (findings.All(f => f.Id != findingId))
+        {
+            return;
+        }
+        State? state = choice switch
+        {
+            "approved" => State.Approved,
+            "rejected" => State.Rejected,
+            _ => null,
+        };
+        if (state is null)
+        {
+            return;
+        }
+        await Api.Findings[findingId].Decision.PostAsync(new Decision { State = state });
+        Navigation.NavigateTo($"documents/{DocumentId}");
+    }
+
+    private static string Lower<T>(T? value) where T : struct, Enum => value?.ToString().ToLowerInvariant() ?? "unknown";
+
+    private static string PageText(StoredFinding finding) => finding.Page?.Integer is int page ? $"page {page}" : "whole document";
+
+    private static bool IsArabic(string text) => text.Any(c => c >= '؀' && c <= 'ۿ');
+}

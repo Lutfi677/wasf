@@ -16,6 +16,9 @@ node_modules/
 bin/
 obj/
 
+review/Client/*
+!review/Client/kiota-lock.json
+
 eval/cost_log.jsonl
 
 CLAUDE.md

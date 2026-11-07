@@ -12,6 +12,7 @@ OPERATIONS = {
     ("post", "/documents"): "upload_document",
     ("get", "/documents"): "list_documents",
     ("get", "/documents/{document_id}/findings"): "list_findings",
+    ("get", "/documents/{document_id}/report"): "get_report",
     ("post", "/findings/{finding_id}/decision"): "record_decision",
 }
 FINDING_FIELDS = {"defect", "page", "evidence", "source", "state", "proposed_fix"}

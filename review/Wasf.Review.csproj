@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Wasf.Review</RootNamespace>
+    <RepoRoot>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', '..'))</RepoRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Kiota.Bundle" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Client\**" />
+    <None Remove="Client\**" />
+  </ItemGroup>
+
+  <Target Name="GenerateWasfClient" BeforeTargets="BeforeBuild">
+    <Exec Command="dotnet tool restore" WorkingDirectory="$(RepoRoot)" />
+    <Exec Command="dotnet kiota generate -d openapi.json -l csharp -o review/Client -n Wasf.Review.Client -c WasfClient --clean-output" WorkingDirectory="$(RepoRoot)" />
+    <ItemGroup>
+      <Compile Remove="Client\**\*.cs" />
+      <Compile Include="Client\**\*.cs" />
+    </ItemGroup>
+  </Target>
+
+</Project>

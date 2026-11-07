@@ -26,13 +26,18 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
 
+      - name: Set up .NET
+        uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68
+        with:
+          global-json-file: global.json
+
       - name: Install fonts
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends fonts-freefont-ttf
 
       - name: Install dependencies
-        run: python -m pip install ".[dev,samples]"
+        run: python -m pip install ".[dev,samples,azure]"
 
       - name: Generate samples
         run: |

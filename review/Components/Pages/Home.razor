@@ -1,0 +1,45 @@
+@page "/"
+@inject WasfClient Api
+
+<PageTitle>Wasf review</PageTitle>
+
+<h1>Documents</h1>
+
+@if (documents.Count == 0)
+{
+    <p>No documents yet. Upload one through the API.</p>
+}
+else
+{
+    <table>
+        <caption>Uploaded documents, newest last</caption>
+        <thead>
+            <tr>
+                <th scope="col">Document</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Findings</th>
+                <th scope="col">Uploaded</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var document in documents)
+            {
+                <tr>
+                    <th scope="row"><a href="documents/@document.Id">Document @document.Id</a></th>
+                    <td>@document.Pages</td>
+                    <td>@document.Findings</td>
+                    <td>@document.UploadedAt?.ToUniversalTime().ToString("yyyy-MM-dd HH:mm 'UTC'")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Document> documents = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        documents = await Api.Documents.GetAsync() ?? [];
+    }
+}

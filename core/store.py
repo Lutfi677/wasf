@@ -38,6 +38,11 @@ SELECT documents.id, documents.pages, documents.uploaded_at, COUNT(findings.id) 
 FROM documents LEFT JOIN findings ON findings.document_id = documents.id
 GROUP BY documents.id ORDER BY documents.id
 """
+DOCUMENT = """
+SELECT documents.id, documents.pages, documents.uploaded_at, COUNT(findings.id) AS findings
+FROM documents LEFT JOIN findings ON findings.document_id = documents.id
+WHERE documents.id = ? GROUP BY documents.id
+"""
 
 
 class Document(BaseModel):
@@ -105,6 +110,11 @@ class Store:
         with self.lock:
             rows = self.connection.execute(DOCUMENTS).fetchall()
         return [document(row) for row in rows]
+
+    def document(self, document_id: int) -> Document | None:
+        with self.lock:
+            row = self.connection.execute(DOCUMENT, (document_id,)).fetchone()
+        return None if row is None else document(row)
 
     def findings(self, document_id: int) -> list[StoredFinding] | None:
         with self.lock:

@@ -1,0 +1,493 @@
+{
+  "tools": {
+    "pdfminer.six": "20260107",
+    "pypdfium2": "5.14.0",
+    "pdftotext": "poppler 25.07.0"
+  },
+  "samples": {
+    "01": {
+      "pdfminer.six": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 36,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 4,
+          "percent": 0.0
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 36,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 4,
+          "percent": 0.0
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 36,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 4,
+          "percent": 0.0
+        }
+      }
+    },
+    "02": {
+      "pdfminer.six": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 66,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 21,
+          "percent": 0.0
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 66,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 21,
+          "percent": 0.0
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 66,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 21,
+          "percent": 0.0
+        }
+      }
+    },
+    "03": {
+      "pdfminer.six": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 4,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "reading_order": {
+          "found": 10,
+          "of": 10,
+          "percent": 100.0
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 4,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "reading_order": {
+          "found": 1,
+          "of": 10,
+          "percent": 10.0
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 4,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        },
+        "reading_order": {
+          "found": 10,
+          "of": 10,
+          "percent": 100.0
+        }
+      }
+    },
+    "04": {
+      "pdfminer.six": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 9,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 9,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 9,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        }
+      }
+    },
+    "05": {
+      "pdfminer.six": {
+        "text": {
+          "found": 0,
+          "of": 1686,
+          "percent": 0.0
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 3,
+          "percent": 0.0
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 0,
+          "of": 1686,
+          "percent": 0.0
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 3,
+          "percent": 0.0
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 0,
+          "of": 1686,
+          "percent": 0.0
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 3,
+          "percent": 0.0
+        }
+      }
+    },
+    "06": {
+      "pdfminer.six": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 5,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 5,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 5,
+          "percent": 0.0
+        },
+        "heading_precision": {
+          "found": 0,
+          "of": 0,
+          "percent": null
+        }
+      }
+    },
+    "07": {
+      "pdfminer.six": {
+        "text": {
+          "found": 139,
+          "of": 807,
+          "percent": 17.2
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 3,
+          "percent": 0.0
+        },
+        "reading_order": {
+          "found": 20,
+          "of": 21,
+          "percent": 95.2
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 620,
+          "of": 807,
+          "percent": 76.8
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 3,
+          "percent": 0.0
+        },
+        "reading_order": {
+          "found": 11,
+          "of": 21,
+          "percent": 52.4
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 157,
+          "of": 807,
+          "percent": 19.5
+        },
+        "table_cells": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        },
+        "header_cells": {
+          "found": 0,
+          "of": 3,
+          "percent": 0.0
+        },
+        "reading_order": {
+          "found": 21,
+          "of": 21,
+          "percent": 100.0
+        }
+      }
+    },
+    "08": {
+      "pdfminer.six": {
+        "text": {
+          "found": 8,
+          "of": 16,
+          "percent": 50.0
+        }
+      },
+      "pypdfium2": {
+        "text": {
+          "found": 10,
+          "of": 16,
+          "percent": 62.5
+        }
+      },
+      "pdftotext": {
+        "text": {
+          "found": 8,
+          "of": 16,
+          "percent": 50.0
+        }
+      }
+    }
+  }
+}

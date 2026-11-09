@@ -1,0 +1,139 @@
+{
+  "rule": "best baseline percent plus half the gap to 100, rounded down to a whole percent",
+  "baseline": "eval/baseline.json",
+  "samples": {
+    "01": {
+      "text": {
+        "target": 95,
+        "from": "formula",
+        "zero_baseline": false
+      },
+      "headings": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "table_cells": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "header_cells": {
+        "target": 100,
+        "from": "fixed"
+      }
+    },
+    "02": {
+      "text": {
+        "target": 100,
+        "from": "formula",
+        "zero_baseline": false
+      },
+      "headings": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "table_cells": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "header_cells": {
+        "target": 100,
+        "from": "fixed"
+      }
+    },
+    "03": {
+      "text": {
+        "target": 100,
+        "from": "formula",
+        "zero_baseline": false
+      },
+      "headings": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "reading_order": {
+        "target": 100,
+        "from": "formula",
+        "zero_baseline": false
+      }
+    },
+    "04": {
+      "text": {
+        "target": 100,
+        "from": "formula",
+        "zero_baseline": false
+      },
+      "headings": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      }
+    },
+    "05": {
+      "text": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "table_cells": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "header_cells": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "parcel_lines_to_person": {
+        "target": 100,
+        "from": "fixed"
+      }
+    },
+    "06": {
+      "text": {
+        "target": 100,
+        "from": "formula",
+        "zero_baseline": false
+      },
+      "headings": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      }
+    },
+    "07": {
+      "text": {
+        "target": 88,
+        "from": "formula",
+        "zero_baseline": false
+      },
+      "table_cells": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "header_cells": {
+        "target": 50,
+        "from": "formula",
+        "zero_baseline": true
+      },
+      "reading_order": {
+        "target": 100,
+        "from": "formula",
+        "zero_baseline": false
+      }
+    },
+    "08": {
+      "text": {
+        "target": 81,
+        "from": "formula",
+        "zero_baseline": false
+      }
+    }
+  }
+}

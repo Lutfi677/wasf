@@ -1,0 +1,30 @@
+{
+  "description": "Wasf phase 2 bake-off: title, language and summary of a document",
+  "baseAnalyzerId": "prebuilt-document",
+  "models": {
+    "completion": "gpt-5.2"
+  },
+  "config": {
+    "returnDetails": true
+  },
+  "fieldSchema": {
+    "name": "wasf_bakeoff_fields",
+    "fields": {
+      "title": {
+        "type": "string",
+        "method": "generate",
+        "description": "The title of the document as its reader would see it, in the language the document is written in."
+      },
+      "language": {
+        "type": "string",
+        "method": "generate",
+        "description": "The main language of the document as a BCP 47 language tag, for example en-US or ar. If the document mixes languages, give the main one."
+      },
+      "summary": {
+        "type": "string",
+        "method": "generate",
+        "description": "A summary of the document in at most two sentences, in the language the document is written in."
+      }
+    }
+  }
+}

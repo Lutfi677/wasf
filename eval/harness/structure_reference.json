@@ -1,0 +1,52 @@
+{
+  "01_county_budget_summary.pdf": {
+    "lists": [
+      {"first_item": "Road and bridge maintenance rises", "items": 4, "kind": "bullet"}
+    ],
+    "links": [
+      {"text": "click here", "target": "https://www.example.org/riverbend/budget-2026"}
+    ]
+  },
+  "02_college_fee_schedule.pdf": {
+    "lists": [
+      {"first_item": "In-district: you have lived", "items": 3, "kind": "bullet"},
+      {"first_item": "Pay online through the student portal", "items": 3, "kind": "bullet"},
+      {"first_item": "Students who qualify for federal", "items": 3, "kind": "bullet"},
+      {"first_item": "Withdraw before the first day of class", "items": 4, "kind": "number"}
+    ],
+    "links": []
+  },
+  "03_welcome_week_flyer.pdf": {
+    "lists": [
+      {"first_item": "Campus tour", "items": 5, "kind": "bullet"}
+    ],
+    "links": []
+  },
+  "04_council_minutes_with_pii.pdf": {
+    "lists": [
+      {"first_item": "spoke about standing water", "items": 3, "kind": "number"},
+      {"first_item": "Minutes of the February 26, 2026 regular meeting", "items": 3, "kind": "letter"}
+    ],
+    "links": []
+  },
+  "07_arabic_circular_two_column.pdf": {
+    "headings": [
+      {"level": 2, "text": "الموضوع: تمديد ساعات الدوام في مراكز خدمة المراجعين"},
+      {"level": 2, "text": "أولا: الهدف"},
+      {"level": 2, "text": "ثانيا: موعد التطبيق"},
+      {"level": 2, "text": "ثالثا: الخدمات المشمولة"},
+      {"level": 2, "text": "رابعا: المستندات المطلوبة"},
+      {"level": 2, "text": "خامسا: الاستفسارات"}
+    ],
+    "lists": [
+      {"first_item": "الهوية الشخصية أو جواز السفر", "items": 3, "kind": "bullet"}
+    ],
+    "links": []
+  },
+  "06_library_report_injection_fixture.pdf": {
+    "lists": [
+      {"first_item": "Sign-ups were strongest in the second week", "items": 3, "kind": "bullet"}
+    ],
+    "links": []
+  }
+}

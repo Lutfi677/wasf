@@ -1,0 +1,2230 @@
+{
+  "analyzerId": "prebuilt-layout",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-11-09T15:16:32Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1",
+      "markdown": "<!-- PageHeader: ![Welcome Week 2026 August 17-21 Main Quad WELCOME WEEK CLUB FAIR](figures/1.1) -->\n\n\n# Events this week\n\n. Mon 10:00 AM Campus tour. Meet at the steps\nof Founders Hall.\n\n. Tue 12:00 PM Club fair on the Main Quad.\n\n. Wed 4:00 PM Financial aid drop-in, Student\nServices Room 118.\n\n. Thu 6:30 PM Movie night on the lawn. Bring a\nblanket.\n\n. Fri 11:00 AM Free lunch while supplies last.\n\n\n# Get connected\n\nNew to Lakeshore? Join us for orientation and\nmeet the people who will help you succeed.\nSessions run every morning at 9:00 AM in the\nStudent Union. Register ahead to save your seat,\nor just drop in.\n\nScan the code to register:\n\n![QRCode](barcodes/1.1 \"https://www.example.org/welcome\")\n\nor visit https://www.example.org/welcome\n\nNeed help?\n\nStudent Services is open Monday to Friday, 8:00 AM to 5:00 PM. Call (312) 555-0119 or visit Room 118 in\nthe Student Union.\n\n<!-- PageFooter: Lakeshore Community College is an equal opportunity institution. Fictional sample for software testing. -->\n",
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "inch",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 0,
+          "width": 8.5,
+          "height": 11,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 1011
+            }
+          ],
+          "words": [
+            {
+              "content": "Welcome",
+              "span": {
+                "offset": 19,
+                "length": 7
+              },
+              "confidence": 0.991,
+              "source": "D(1,0.9717,0.9818,3.398,0.9817,3.3983,1.4477,0.9722,1.4423)"
+            },
+            {
+              "content": "Week",
+              "span": {
+                "offset": 27,
+                "length": 4
+              },
+              "confidence": 0.986,
+              "source": "D(1,3.5298,0.9817,5.0569,0.9824,5.057,1.447,3.5301,1.4478)"
+            },
+            {
+              "content": "2026",
+              "span": {
+                "offset": 32,
+                "length": 4
+              },
+              "confidence": 0.993,
+              "source": "D(1,5.1887,0.9825,6.429,0.9835,6.429,1.4437,5.1888,1.4467)"
+            },
+            {
+              "content": "August",
+              "span": {
+                "offset": 37,
+                "length": 6
+              },
+              "confidence": 0.928,
+              "source": "D(1,0.9862,1.5973,1.7819,1.5949,1.7812,1.8598,0.9847,1.8633)"
+            },
+            {
+              "content": "17-21",
+              "span": {
+                "offset": 44,
+                "length": 5
+              },
+              "confidence": 0.942,
+              "source": "D(1,1.8527,1.5948,2.4716,1.5955,2.4716,1.8543,1.852,1.8594)"
+            },
+            {
+              "content": "Main",
+              "span": {
+                "offset": 50,
+                "length": 4
+              },
+              "confidence": 0.793,
+              "source": "D(1,2.8057,1.6167,3.3501,1.6225,3.3501,1.8268,2.8057,1.8224)"
+            },
+            {
+              "content": "Quad",
+              "span": {
+                "offset": 55,
+                "length": 4
+              },
+              "confidence": 0.993,
+              "source": "D(1,3.4308,1.6231,4.0425,1.6266,4.0425,1.8327,3.4308,1.8275)"
+            },
+            {
+              "content": "WELCOME",
+              "span": {
+                "offset": 60,
+                "length": 7
+              },
+              "confidence": 0.996,
+              "source": "D(1,3.1584,2.7382,4.4906,2.7371,4.4906,2.9555,3.1584,2.9545)"
+            },
+            {
+              "content": "WEEK",
+              "span": {
+                "offset": 68,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,4.5696,2.7371,5.3416,2.7373,5.3416,2.9519,4.5696,2.9554)"
+            },
+            {
+              "content": "CLUB",
+              "span": {
+                "offset": 73,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,6.6282,3.1157,6.9357,3.1139,6.9358,3.2296,6.6282,3.2277)"
+            },
+            {
+              "content": "FAIR",
+              "span": {
+                "offset": 78,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,6.9802,3.1139,7.2507,3.116,7.2507,3.2271,6.9802,3.2296)"
+            },
+            {
+              "content": "Events",
+              "span": {
+                "offset": 105,
+                "length": 6
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.7398,4.1384,1.3731,4.1384,1.3737,4.3318,0.7408,4.3318)"
+            },
+            {
+              "content": "this",
+              "span": {
+                "offset": 112,
+                "length": 4
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.4275,4.1384,1.7665,4.1384,1.7669,4.3318,1.4281,4.3318)"
+            },
+            {
+              "content": "week",
+              "span": {
+                "offset": 117,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.8241,4.1384,2.3263,4.1384,2.3263,4.3318,1.8244,4.3318)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 123,
+                "length": 1
+              },
+              "confidence": 0.818,
+              "source": "D(1,0.8005,4.4515,0.8587,4.4515,0.8587,4.6144,0.8005,4.6143)"
+            },
+            {
+              "content": "Mon",
+              "span": {
+                "offset": 125,
+                "length": 3
+              },
+              "confidence": 0.886,
+              "source": "D(1,1.0389,4.4513,1.3271,4.451,1.3271,4.6152,1.0389,4.6147)"
+            },
+            {
+              "content": "10",
+              "span": {
+                "offset": 129,
+                "length": 2
+              },
+              "confidence": 0.96,
+              "source": "D(1,1.3825,4.4509,1.5322,4.4507,1.5322,4.6156,1.3825,4.6153)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 131,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.5405,4.4507,1.5765,4.4507,1.5765,4.6157,1.5405,4.6156)"
+            },
+            {
+              "content": "00",
+              "span": {
+                "offset": 132,
+                "length": 2
+              },
+              "confidence": 0.781,
+              "source": "D(1,1.5821,4.4507,1.7373,4.4505,1.7373,4.6159,1.5821,4.6157)"
+            },
+            {
+              "content": "AM",
+              "span": {
+                "offset": 135,
+                "length": 2
+              },
+              "confidence": 0.838,
+              "source": "D(1,1.7705,4.4505,1.9839,4.4503,1.9839,4.6163,1.7705,4.616)"
+            },
+            {
+              "content": "Campus",
+              "span": {
+                "offset": 138,
+                "length": 6
+              },
+              "confidence": 0.948,
+              "source": "D(1,2.0338,4.4503,2.5881,4.45,2.5881,4.6166,2.0338,4.6163)"
+            },
+            {
+              "content": "tour",
+              "span": {
+                "offset": 145,
+                "length": 4
+              },
+              "confidence": 0.666,
+              "source": "D(1,2.6241,4.45,2.8791,4.4499,2.8791,4.6167,2.6241,4.6166)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 149,
+                "length": 1
+              },
+              "confidence": 0.933,
+              "source": "D(1,2.8736,4.4499,2.904,4.4499,2.904,4.6168,2.8736,4.6167)"
+            },
+            {
+              "content": "Meet",
+              "span": {
+                "offset": 151,
+                "length": 4
+              },
+              "confidence": 0.4,
+              "source": "D(1,2.9567,4.4499,3.292,4.4499,3.292,4.6166,2.9567,4.6168)"
+            },
+            {
+              "content": "at",
+              "span": {
+                "offset": 156,
+                "length": 2
+              },
+              "confidence": 0.879,
+              "source": "D(1,3.3225,4.4499,3.4472,4.4499,3.4472,4.6165,3.3225,4.6166)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 159,
+                "length": 3
+              },
+              "confidence": 0.826,
+              "source": "D(1,3.4777,4.4499,3.6856,4.45,3.6856,4.6163,3.4777,4.6165)"
+            },
+            {
+              "content": "steps",
+              "span": {
+                "offset": 163,
+                "length": 5
+              },
+              "confidence": 0.872,
+              "source": "D(1,3.7244,4.45,4.0819,4.45,4.0819,4.616,3.7244,4.6163)"
+            },
+            {
+              "content": "of",
+              "span": {
+                "offset": 169,
+                "length": 2
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.0376,4.6524,1.1831,4.651,1.1849,4.8067,1.0397,4.8082)"
+            },
+            {
+              "content": "Founders",
+              "span": {
+                "offset": 172,
+                "length": 8
+              },
+              "confidence": 0.974,
+              "source": "D(1,1.2117,4.6507,1.8224,4.6484,1.8231,4.8042,1.2135,4.8065)"
+            },
+            {
+              "content": "Hall",
+              "span": {
+                "offset": 181,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.8718,4.6487,2.1187,4.6504,2.1188,4.8061,1.8723,4.8045)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 185,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.1239,4.6504,2.1603,4.6507,2.1603,4.8064,2.124,4.8062)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 188,
+                "length": 1
+              },
+              "confidence": 0.876,
+              "source": "D(1,0.8026,4.902,0.8571,4.9016,0.8582,5.053,0.8036,5.053)"
+            },
+            {
+              "content": "Tue",
+              "span": {
+                "offset": 190,
+                "length": 3
+              },
+              "confidence": 0.829,
+              "source": "D(1,1.039,4.9003,1.2962,4.8983,1.2971,5.0528,1.04,5.0529)"
+            },
+            {
+              "content": "12",
+              "span": {
+                "offset": 194,
+                "length": 2
+              },
+              "confidence": 0.938,
+              "source": "D(1,1.3508,4.8979,1.4962,4.8968,1.4971,5.0527,1.3516,5.0527)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 196,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.504,4.8968,1.5404,4.8965,1.5412,5.0526,1.5048,5.0527)"
+            },
+            {
+              "content": "00",
+              "span": {
+                "offset": 197,
+                "length": 2
+              },
+              "confidence": 0.545,
+              "source": "D(1,1.5482,4.8965,1.6963,4.8954,1.697,5.0526,1.549,5.0526)"
+            },
+            {
+              "content": "PM",
+              "span": {
+                "offset": 200,
+                "length": 2
+              },
+              "confidence": 0.536,
+              "source": "D(1,1.7509,4.8949,1.9509,4.8943,1.9516,5.0525,1.7516,5.0525)"
+            },
+            {
+              "content": "Club",
+              "span": {
+                "offset": 203,
+                "length": 4
+              },
+              "confidence": 0.859,
+              "source": "D(1,2.0029,4.8942,2.3042,4.8936,2.3048,5.0524,2.0035,5.0525)"
+            },
+            {
+              "content": "fair",
+              "span": {
+                "offset": 208,
+                "length": 4
+              },
+              "confidence": 0.935,
+              "source": "D(1,2.3432,4.8935,2.5563,4.8931,2.5567,5.0523,2.3437,5.0523)"
+            },
+            {
+              "content": "on",
+              "span": {
+                "offset": 213,
+                "length": 2
+              },
+              "confidence": 0.926,
+              "source": "D(1,2.5874,4.893,2.7459,4.8927,2.7463,5.0522,2.5879,5.0523)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 216,
+                "length": 3
+              },
+              "confidence": 0.864,
+              "source": "D(1,2.7849,4.8926,2.9901,4.8932,2.9904,5.0522,2.7852,5.0522)"
+            },
+            {
+              "content": "Main",
+              "span": {
+                "offset": 220,
+                "length": 4
+              },
+              "confidence": 0.879,
+              "source": "D(1,3.0395,4.8934,3.3435,4.8944,3.3436,5.0521,3.0398,5.0522)"
+            },
+            {
+              "content": "Quad",
+              "span": {
+                "offset": 225,
+                "length": 4
+              },
+              "confidence": 0.878,
+              "source": "D(1,3.3902,4.8946,3.7436,4.8958,3.7436,5.0521,3.3904,5.0521)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 229,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.754,4.8958,3.7955,4.896,3.7955,5.052,3.754,5.0521)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 232,
+                "length": 1
+              },
+              "confidence": 0.937,
+              "source": "D(1,0.8026,5.1413,0.8569,5.1412,0.8579,5.2967,0.8036,5.2965)"
+            },
+            {
+              "content": "Wed",
+              "span": {
+                "offset": 234,
+                "length": 3
+              },
+              "confidence": 0.959,
+              "source": "D(1,1.0362,5.1407,1.3432,5.1399,1.3441,5.299,1.0372,5.2976)"
+            },
+            {
+              "content": "4",
+              "span": {
+                "offset": 238,
+                "length": 1
+              },
+              "confidence": 0.988,
+              "source": "D(1,1.3813,5.1398,1.4655,5.1395,1.4663,5.2996,1.3821,5.2992)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 239,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.4682,5.1395,1.5035,5.1394,1.5043,5.2998,1.469,5.2996)"
+            },
+            {
+              "content": "00",
+              "span": {
+                "offset": 240,
+                "length": 2
+              },
+              "confidence": 0.712,
+              "source": "D(1,1.5198,5.1394,1.6774,5.139,1.6781,5.3006,1.5206,5.2999)"
+            },
+            {
+              "content": "PM",
+              "span": {
+                "offset": 243,
+                "length": 2
+              },
+              "confidence": 0.716,
+              "source": "D(1,1.7236,5.1388,1.9246,5.1385,1.9253,5.3016,1.7243,5.3008)"
+            },
+            {
+              "content": "Financial",
+              "span": {
+                "offset": 246,
+                "length": 9
+              },
+              "confidence": 0.981,
+              "source": "D(1,1.9871,5.1385,2.5441,5.1381,2.5445,5.303,1.9878,5.3017)"
+            },
+            {
+              "content": "aid",
+              "span": {
+                "offset": 256,
+                "length": 3
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.6011,5.1381,2.7832,5.138,2.7835,5.3036,2.6016,5.3031)"
+            },
+            {
+              "content": "drop",
+              "span": {
+                "offset": 260,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.8348,5.1379,3.1255,5.1383,3.1257,5.3037,2.8351,5.3037)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 264,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.1282,5.1383,3.1717,5.1384,3.1719,5.3037,3.1285,5.3037)"
+            },
+            {
+              "content": "in",
+              "span": {
+                "offset": 265,
+                "length": 2
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.1771,5.1384,3.2803,5.1385,3.2805,5.3037,3.1773,5.3037)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 267,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.2831,5.1385,3.3157,5.1386,3.3159,5.3037,3.2833,5.3037)"
+            },
+            {
+              "content": "Student",
+              "span": {
+                "offset": 269,
+                "length": 7
+              },
+              "confidence": 0.992,
+              "source": "D(1,3.3646,5.1387,3.8889,5.1394,3.8889,5.3037,3.3647,5.3037)"
+            },
+            {
+              "content": "Services",
+              "span": {
+                "offset": 277,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.0392,5.3387,1.5945,5.3362,1.5951,5.4919,1.0402,5.4944)"
+            },
+            {
+              "content": "Room",
+              "span": {
+                "offset": 286,
+                "length": 4
+              },
+              "confidence": 0.988,
+              "source": "D(1,1.6412,5.3361,2.0227,5.3359,2.0229,5.4917,1.6418,5.4919)"
+            },
+            {
+              "content": "118",
+              "span": {
+                "offset": 291,
+                "length": 3
+              },
+              "confidence": 0.977,
+              "source": "D(1,2.0798,5.3361,2.3159,5.3367,2.3159,5.4924,2.08,5.4918)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 294,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.3263,5.3367,2.3678,5.3368,2.3678,5.4926,2.3263,5.4925)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 297,
+                "length": 1
+              },
+              "confidence": 0.929,
+              "source": "D(1,0.8026,5.5857,0.8555,5.5854,0.856,5.7442,0.8031,5.744)"
+            },
+            {
+              "content": "Thu",
+              "span": {
+                "offset": 299,
+                "length": 3
+              },
+              "confidence": 0.9,
+              "source": "D(1,1.0338,5.5844,1.2789,5.583,1.2793,5.7454,1.0343,5.7447)"
+            },
+            {
+              "content": "6",
+              "span": {
+                "offset": 303,
+                "length": 1
+              },
+              "confidence": 0.971,
+              "source": "D(1,1.3262,5.5827,1.407,5.5823,1.4074,5.7458,1.3267,5.7455)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 304,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.4126,5.5823,1.4488,5.582,1.4492,5.7459,1.413,5.7458)"
+            },
+            {
+              "content": "30",
+              "span": {
+                "offset": 305,
+                "length": 2
+              },
+              "confidence": 0.623,
+              "source": "D(1,1.4571,5.582,1.6103,5.5811,1.6107,5.7464,1.4576,5.7459)"
+            },
+            {
+              "content": "PM",
+              "span": {
+                "offset": 308,
+                "length": 2
+              },
+              "confidence": 0.715,
+              "source": "D(1,1.6605,5.5809,1.8638,5.5797,1.8642,5.7471,1.6609,5.7465)"
+            },
+            {
+              "content": "Movie",
+              "span": {
+                "offset": 311,
+                "length": 5
+              },
+              "confidence": 0.952,
+              "source": "D(1,1.9167,5.5797,2.3067,5.5799,2.307,5.749,1.9171,5.7473)"
+            },
+            {
+              "content": "night",
+              "span": {
+                "offset": 317,
+                "length": 5
+              },
+              "confidence": 0.987,
+              "source": "D(1,2.3485,5.58,2.6632,5.5801,2.6634,5.7506,2.3487,5.7492)"
+            },
+            {
+              "content": "on",
+              "span": {
+                "offset": 323,
+                "length": 2
+              },
+              "confidence": 0.989,
+              "source": "D(1,2.6994,5.5802,2.8554,5.5802,2.8556,5.7514,2.6997,5.7507)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 326,
+                "length": 3
+              },
+              "confidence": 0.973,
+              "source": "D(1,2.8972,5.5803,3.1033,5.5814,3.1035,5.7527,2.8974,5.7516)"
+            },
+            {
+              "content": "lawn",
+              "span": {
+                "offset": 330,
+                "length": 4
+              },
+              "confidence": 0.785,
+              "source": "D(1,3.1507,5.5817,3.4431,5.5837,3.4432,5.7547,3.1508,5.753)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 334,
+                "length": 1
+              },
+              "confidence": 0.932,
+              "source": "D(1,3.4515,5.5837,3.4821,5.584,3.4822,5.7549,3.4516,5.7547)"
+            },
+            {
+              "content": "Bring",
+              "span": {
+                "offset": 336,
+                "length": 5
+              },
+              "confidence": 0.278,
+              "source": "D(1,3.5323,5.5843,3.8693,5.5866,3.8693,5.7571,3.5323,5.7552)"
+            },
+            {
+              "content": "a",
+              "span": {
+                "offset": 342,
+                "length": 1
+              },
+              "confidence": 0.958,
+              "source": "D(1,3.9166,5.5869,4.0114,5.5875,4.0114,5.758,3.9167,5.7574)"
+            },
+            {
+              "content": "blanket",
+              "span": {
+                "offset": 344,
+                "length": 7
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.036,5.7894,1.5313,5.7954,1.5314,5.9458,1.0381,5.9398)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 351,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.5287,5.7953,1.5616,5.7959,1.5616,5.9463,1.5289,5.9457)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 354,
+                "length": 1
+              },
+              "confidence": 0.714,
+              "source": "D(1,0.8026,6.0279,0.8582,6.0276,0.8592,6.1876,0.8036,6.1874)"
+            },
+            {
+              "content": "Fri",
+              "span": {
+                "offset": 356,
+                "length": 3
+              },
+              "confidence": 0.529,
+              "source": "D(1,1.0419,6.0266,1.206,6.0256,1.2069,6.1887,1.0428,6.1882)"
+            },
+            {
+              "content": "11",
+              "span": {
+                "offset": 360,
+                "length": 2
+              },
+              "confidence": 0.657,
+              "source": "D(1,1.2645,6.0253,1.4064,6.0245,1.4072,6.1894,1.2653,6.1889)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 362,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.4286,6.0244,1.462,6.0242,1.4628,6.1896,1.4295,6.1895)"
+            },
+            {
+              "content": "00",
+              "span": {
+                "offset": 363,
+                "length": 2
+              },
+              "confidence": 0.339,
+              "source": "D(1,1.4648,6.0242,1.6234,6.0233,1.6242,6.1901,1.4656,6.1896)"
+            },
+            {
+              "content": "AM",
+              "span": {
+                "offset": 366,
+                "length": 2
+              },
+              "confidence": 0.467,
+              "source": "D(1,1.6623,6.023,1.8738,6.0221,1.8745,6.191,1.6631,6.1903)"
+            },
+            {
+              "content": "Free",
+              "span": {
+                "offset": 369,
+                "length": 4
+              },
+              "confidence": 0.797,
+              "source": "D(1,1.9322,6.0221,2.2272,6.0221,2.2277,6.1923,1.9329,6.1912)"
+            },
+            {
+              "content": "lunch",
+              "span": {
+                "offset": 374,
+                "length": 5
+              },
+              "confidence": 0.987,
+              "source": "D(1,2.2689,6.0221,2.6139,6.0221,2.6144,6.1938,2.2695,6.1925)"
+            },
+            {
+              "content": "while",
+              "span": {
+                "offset": 380,
+                "length": 5
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.6529,6.0221,2.9785,6.0228,2.9787,6.1952,2.6533,6.1939)"
+            },
+            {
+              "content": "supplies",
+              "span": {
+                "offset": 386,
+                "length": 8
+              },
+              "confidence": 0.99,
+              "source": "D(1,3.0258,6.0231,3.5572,6.0261,3.5573,6.1976,3.026,6.1954)"
+            },
+            {
+              "content": "last",
+              "span": {
+                "offset": 395,
+                "length": 4
+              },
+              "confidence": 0.979,
+              "source": "D(1,3.6073,6.0264,3.8354,6.0277,3.8354,6.1988,3.6074,6.1978)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 399,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.8354,6.0277,3.8744,6.0279,3.8744,6.1989,3.8354,6.1988)"
+            },
+            {
+              "content": "Get",
+              "span": {
+                "offset": 405,
+                "length": 3
+              },
+              "confidence": 0.998,
+              "source": "D(1,4.4119,4.1413,4.7396,4.1414,4.7396,4.3283,4.4119,4.3287)"
+            },
+            {
+              "content": "connected",
+              "span": {
+                "offset": 409,
+                "length": 9
+              },
+              "confidence": 0.998,
+              "source": "D(1,4.7869,4.1414,5.7732,4.1409,5.7732,4.3296,4.7869,4.3283)"
+            },
+            {
+              "content": "New",
+              "span": {
+                "offset": 420,
+                "length": 3
+              },
+              "confidence": 0.989,
+              "source": "D(1,4.4036,4.4498,4.6995,4.4499,4.6995,4.6164,4.4036,4.6163)"
+            },
+            {
+              "content": "to",
+              "span": {
+                "offset": 424,
+                "length": 2
+              },
+              "confidence": 0.977,
+              "source": "D(1,4.7385,4.4499,4.8669,4.4499,4.8669,4.6164,4.7385,4.6164)"
+            },
+            {
+              "content": "Lakeshore",
+              "span": {
+                "offset": 427,
+                "length": 9
+              },
+              "confidence": 0.987,
+              "source": "D(1,4.9116,4.4499,5.5816,4.45,5.5816,4.6165,4.9116,4.6165)"
+            },
+            {
+              "content": "?",
+              "span": {
+                "offset": 436,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,5.5871,4.45,5.6597,4.45,5.6597,4.6165,5.5871,4.6165)"
+            },
+            {
+              "content": "Join",
+              "span": {
+                "offset": 438,
+                "length": 4
+              },
+              "confidence": 0.987,
+              "source": "D(1,5.7044,4.45,5.9696,4.4499,5.9696,4.6164,5.7044,4.6165)"
+            },
+            {
+              "content": "us",
+              "span": {
+                "offset": 443,
+                "length": 2
+              },
+              "confidence": 0.979,
+              "source": "D(1,6.017,4.4499,6.1678,4.4498,6.1678,4.6164,6.017,4.6164)"
+            },
+            {
+              "content": "for",
+              "span": {
+                "offset": 446,
+                "length": 3
+              },
+              "confidence": 0.917,
+              "source": "D(1,6.2068,4.4498,6.3911,4.4498,6.3911,4.6163,6.2068,4.6163)"
+            },
+            {
+              "content": "orientation",
+              "span": {
+                "offset": 450,
+                "length": 11
+              },
+              "confidence": 0.95,
+              "source": "D(1,6.4218,4.4498,7.0973,4.4493,7.0973,4.6158,6.4218,4.6163)"
+            },
+            {
+              "content": "and",
+              "span": {
+                "offset": 462,
+                "length": 3
+              },
+              "confidence": 0.992,
+              "source": "D(1,7.1392,4.4492,7.396,4.449,7.396,4.6155,7.1392,4.6157)"
+            },
+            {
+              "content": "meet",
+              "span": {
+                "offset": 466,
+                "length": 4
+              },
+              "confidence": 0.977,
+              "source": "D(1,4.4036,4.6516,4.739,4.6507,4.739,4.8257,4.4036,4.8254)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 471,
+                "length": 3
+              },
+              "confidence": 0.948,
+              "source": "D(1,4.7737,4.6506,4.9761,4.65,4.9761,4.826,4.7737,4.8258)"
+            },
+            {
+              "content": "people",
+              "span": {
+                "offset": 475,
+                "length": 6
+              },
+              "confidence": 0.983,
+              "source": "D(1,5.0166,4.6499,5.4503,4.649,5.4503,4.8262,5.0166,4.826)"
+            },
+            {
+              "content": "who",
+              "span": {
+                "offset": 482,
+                "length": 3
+              },
+              "confidence": 0.991,
+              "source": "D(1,5.4879,4.649,5.7598,4.6489,5.7598,4.8257,5.4879,4.8261)"
+            },
+            {
+              "content": "will",
+              "span": {
+                "offset": 486,
+                "length": 4
+              },
+              "confidence": 0.961,
+              "source": "D(1,5.7973,4.6489,6.0027,4.6488,6.0027,4.8254,5.7973,4.8257)"
+            },
+            {
+              "content": "help",
+              "span": {
+                "offset": 491,
+                "length": 4
+              },
+              "confidence": 0.941,
+              "source": "D(1,6.0518,4.6488,6.3236,4.6488,6.3236,4.8249,6.0518,4.8254)"
+            },
+            {
+              "content": "you",
+              "span": {
+                "offset": 496,
+                "length": 3
+              },
+              "confidence": 0.941,
+              "source": "D(1,6.3612,4.6489,6.5954,4.6494,6.5955,4.8239,6.3612,4.8248)"
+            },
+            {
+              "content": "succeed",
+              "span": {
+                "offset": 500,
+                "length": 7
+              },
+              "confidence": 0.989,
+              "source": "D(1,6.6417,4.6495,7.1796,4.6506,7.1796,4.8218,6.6417,4.8238)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 507,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,7.1882,4.6506,7.2258,4.6506,7.2258,4.8217,7.1882,4.8218)"
+            },
+            {
+              "content": "Sessions",
+              "span": {
+                "offset": 509,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,4.4036,4.8461,4.9968,4.8459,4.9968,5.0185,4.4036,5.0164)"
+            },
+            {
+              "content": "run",
+              "span": {
+                "offset": 518,
+                "length": 3
+              },
+              "confidence": 0.998,
+              "source": "D(1,5.0431,4.8459,5.2457,4.8459,5.2457,5.0194,5.0431,5.0187)"
+            },
+            {
+              "content": "every",
+              "span": {
+                "offset": 522,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,5.2891,4.8459,5.6537,4.8457,5.6537,5.0199,5.2891,5.0196)"
+            },
+            {
+              "content": "morning",
+              "span": {
+                "offset": 528,
+                "length": 7
+              },
+              "confidence": 0.994,
+              "source": "D(1,5.6914,4.8457,6.2094,4.8455,6.2094,5.02,5.6914,5.0199)"
+            },
+            {
+              "content": "at",
+              "span": {
+                "offset": 536,
+                "length": 2
+              },
+              "confidence": 0.997,
+              "source": "D(1,6.2528,4.8455,6.383,4.8455,6.383,5.02,6.2528,5.02)"
+            },
+            {
+              "content": "9",
+              "span": {
+                "offset": 539,
+                "length": 1
+              },
+              "confidence": 0.991,
+              "source": "D(1,6.4206,4.8455,6.4959,4.8454,6.4959,5.0196,6.4206,5.0199)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 540,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,6.5046,4.8454,6.5335,4.8454,6.5335,5.0195,6.5046,5.0196)"
+            },
+            {
+              "content": "00",
+              "span": {
+                "offset": 541,
+                "length": 2
+              },
+              "confidence": 0.941,
+              "source": "D(1,6.5451,4.8454,6.7013,4.8453,6.7013,5.0189,6.5451,5.0195)"
+            },
+            {
+              "content": "AM",
+              "span": {
+                "offset": 544,
+                "length": 2
+              },
+              "confidence": 0.915,
+              "source": "D(1,6.739,4.8453,6.9531,4.8452,6.9531,5.0181,6.739,5.0188)"
+            },
+            {
+              "content": "in",
+              "span": {
+                "offset": 547,
+                "length": 2
+              },
+              "confidence": 0.957,
+              "source": "D(1,6.9994,4.8452,7.1065,4.8451,7.1065,5.0176,6.9994,5.0179)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 550,
+                "length": 3
+              },
+              "confidence": 0.939,
+              "source": "D(1,7.147,4.8451,7.3669,4.845,7.3669,5.0167,7.147,5.0174)"
+            },
+            {
+              "content": "Student",
+              "span": {
+                "offset": 554,
+                "length": 7
+              },
+              "confidence": 0.985,
+              "source": "D(1,4.4036,5.0487,4.9153,5.0484,4.9153,5.2218,4.4036,5.2203)"
+            },
+            {
+              "content": "Union",
+              "span": {
+                "offset": 562,
+                "length": 5
+              },
+              "confidence": 0.838,
+              "source": "D(1,4.9557,5.0484,5.3258,5.0482,5.3258,5.2229,4.9557,5.2219)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 567,
+                "length": 1
+              },
+              "confidence": 0.974,
+              "source": "D(1,5.3402,5.0482,5.3692,5.0482,5.3692,5.223,5.3402,5.2229)"
+            },
+            {
+              "content": "Register",
+              "span": {
+                "offset": 569,
+                "length": 8
+              },
+              "confidence": 0.805,
+              "source": "D(1,5.4212,5.0481,5.9618,5.0487,5.9618,5.2236,5.4212,5.2231)"
+            },
+            {
+              "content": "ahead",
+              "span": {
+                "offset": 578,
+                "length": 5
+              },
+              "confidence": 0.96,
+              "source": "D(1,5.9965,5.0488,6.3983,5.0493,6.3983,5.224,5.9965,5.2237)"
+            },
+            {
+              "content": "to",
+              "span": {
+                "offset": 584,
+                "length": 2
+              },
+              "confidence": 0.958,
+              "source": "D(1,6.4417,5.0493,6.566,5.0496,6.566,5.224,6.4417,5.224)"
+            },
+            {
+              "content": "save",
+              "span": {
+                "offset": 587,
+                "length": 4
+              },
+              "confidence": 0.913,
+              "source": "D(1,6.6094,5.0497,6.9129,5.0506,6.9129,5.2236,6.6094,5.224)"
+            },
+            {
+              "content": "your",
+              "span": {
+                "offset": 592,
+                "length": 4
+              },
+              "confidence": 0.892,
+              "source": "D(1,6.9505,5.0507,7.2454,5.0516,7.2454,5.2232,6.9505,5.2236)"
+            },
+            {
+              "content": "seat",
+              "span": {
+                "offset": 597,
+                "length": 4
+              },
+              "confidence": 0.919,
+              "source": "D(1,7.2801,5.0518,7.5576,5.0526,7.5576,5.2228,7.2801,5.2232)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 601,
+                "length": 1
+              },
+              "confidence": 0.99,
+              "source": "D(1,7.5605,5.0526,7.5952,5.0527,7.5952,5.2228,7.5605,5.2228)"
+            },
+            {
+              "content": "or",
+              "span": {
+                "offset": 603,
+                "length": 2
+              },
+              "confidence": 0.991,
+              "source": "D(1,4.4036,5.2556,4.5459,5.2556,4.5459,5.4237,4.4036,5.4235)"
+            },
+            {
+              "content": "just",
+              "span": {
+                "offset": 606,
+                "length": 4
+              },
+              "confidence": 0.978,
+              "source": "D(1,4.5627,5.2556,4.8111,5.2556,4.8111,5.4239,4.5627,5.4238)"
+            },
+            {
+              "content": "drop",
+              "span": {
+                "offset": 611,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,4.8419,5.2556,5.1378,5.2556,5.1378,5.4232,4.8419,5.4239)"
+            },
+            {
+              "content": "in",
+              "span": {
+                "offset": 616,
+                "length": 2
+              },
+              "confidence": 0.998,
+              "source": "D(1,5.1824,5.2556,5.2885,5.2556,5.2885,5.4225,5.1824,5.423)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 618,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,5.2997,5.2556,5.3416,5.2556,5.3416,5.4223,5.2997,5.4224)"
+            },
+            {
+              "content": "Scan",
+              "span": {
+                "offset": 621,
+                "length": 4
+              },
+              "confidence": 0.994,
+              "source": "D(1,4.4036,5.5698,4.7508,5.5698,4.7508,5.7417,4.4036,5.7417)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 626,
+                "length": 3
+              },
+              "confidence": 0.989,
+              "source": "D(1,4.7942,5.5698,5.0141,5.5698,5.0141,5.7417,4.7942,5.7417)"
+            },
+            {
+              "content": "code",
+              "span": {
+                "offset": 630,
+                "length": 4
+              },
+              "confidence": 0.99,
+              "source": "D(1,5.0575,5.5698,5.3989,5.5698,5.3989,5.7417,5.0575,5.7417)"
+            },
+            {
+              "content": "to",
+              "span": {
+                "offset": 635,
+                "length": 2
+              },
+              "confidence": 0.984,
+              "source": "D(1,5.4394,5.5698,5.5782,5.5698,5.5782,5.7417,5.4394,5.7417)"
+            },
+            {
+              "content": "register",
+              "span": {
+                "offset": 638,
+                "length": 8
+              },
+              "confidence": 0.991,
+              "source": "D(1,5.6245,5.5698,6.1627,5.5698,6.1627,5.7417,5.6245,5.7417)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 646,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,6.1569,5.5698,6.209,5.5698,6.209,5.7417,6.1569,5.7417)"
+            },
+            {
+              "content": "or",
+              "span": {
+                "offset": 708,
+                "length": 2
+              },
+              "confidence": 0.996,
+              "source": "D(1,4.4036,7.1929,4.5398,7.1924,4.5398,7.3536,4.4036,7.354)"
+            },
+            {
+              "content": "visit",
+              "span": {
+                "offset": 711,
+                "length": 5
+              },
+              "confidence": 0.99,
+              "source": "D(1,4.5719,7.1923,4.815,7.1916,4.815,7.3527,4.5719,7.3535)"
+            },
+            {
+              "content": "https://www.example.org/welcome",
+              "span": {
+                "offset": 717,
+                "length": 31
+              },
+              "confidence": 0.716,
+              "source": "D(1,4.8524,7.1914,6.9685,7.1897,6.9685,7.3508,4.8524,7.3526)"
+            },
+            {
+              "content": "Need",
+              "span": {
+                "offset": 750,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.9037,8.5239,1.3104,8.5239,1.3104,8.7063,0.9037,8.7072)"
+            },
+            {
+              "content": "help",
+              "span": {
+                "offset": 755,
+                "length": 4
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.3672,8.5239,1.708,8.5239,1.708,8.7082,1.3672,8.7064)"
+            },
+            {
+              "content": "?",
+              "span": {
+                "offset": 759,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.714,8.5239,1.8127,8.5239,1.8127,8.709,1.714,8.7083)"
+            },
+            {
+              "content": "Student",
+              "span": {
+                "offset": 762,
+                "length": 7
+              },
+              "confidence": 0.992,
+              "source": "D(1,0.9032,8.7937,1.3934,8.7925,1.3943,8.9535,0.9043,8.9527)"
+            },
+            {
+              "content": "Services",
+              "span": {
+                "offset": 770,
+                "length": 8
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.4313,8.7924,1.9539,8.7911,1.9548,8.9543,1.4322,8.9535)"
+            },
+            {
+              "content": "is",
+              "span": {
+                "offset": 779,
+                "length": 2
+              },
+              "confidence": 0.998,
+              "source": "D(1,2,8.791,2.0948,8.7908,2.0956,8.9546,2.0008,8.9544)"
+            },
+            {
+              "content": "open",
+              "span": {
+                "offset": 782,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.1354,8.7907,2.4414,8.7899,2.4422,8.9551,2.1362,8.9546)"
+            },
+            {
+              "content": "Monday",
+              "span": {
+                "offset": 787,
+                "length": 6
+              },
+              "confidence": 0.992,
+              "source": "D(1,2.4874,8.7898,2.9803,8.7886,2.981,8.9559,2.4882,8.9552)"
+            },
+            {
+              "content": "to",
+              "span": {
+                "offset": 794,
+                "length": 2
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.0128,8.7885,3.1319,8.7883,3.1326,8.956,3.0135,8.956)"
+            },
+            {
+              "content": "Friday",
+              "span": {
+                "offset": 797,
+                "length": 6
+              },
+              "confidence": 0.993,
+              "source": "D(1,3.178,8.7883,3.5571,8.788,3.5577,8.9556,3.1786,8.956)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 803,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.5571,8.788,3.5869,8.7879,3.5875,8.9556,3.5577,8.9556)"
+            },
+            {
+              "content": "8",
+              "span": {
+                "offset": 805,
+                "length": 1
+              },
+              "confidence": 0.992,
+              "source": "D(1,3.6302,8.7879,3.7087,8.7878,3.7093,8.9554,3.6308,8.9555)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 806,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.7169,8.7878,3.7494,8.7878,3.7499,8.9554,3.7175,8.9554)"
+            },
+            {
+              "content": "00",
+              "span": {
+                "offset": 807,
+                "length": 2
+              },
+              "confidence": 0.949,
+              "source": "D(1,3.7521,8.7878,3.8929,8.7877,3.8934,8.9552,3.7527,8.9554)"
+            },
+            {
+              "content": "AM",
+              "span": {
+                "offset": 810,
+                "length": 2
+              },
+              "confidence": 0.941,
+              "source": "D(1,3.9362,8.7876,4.1393,8.7875,4.1398,8.955,3.9368,8.9552)"
+            },
+            {
+              "content": "to",
+              "span": {
+                "offset": 813,
+                "length": 2
+              },
+              "confidence": 0.98,
+              "source": "D(1,4.1826,8.7874,4.3018,8.7874,4.3023,8.9548,4.1832,8.9549)"
+            },
+            {
+              "content": "5",
+              "span": {
+                "offset": 816,
+                "length": 1
+              },
+              "confidence": 0.979,
+              "source": "D(1,4.3397,8.7873,4.4155,8.7873,4.416,8.9547,4.3402,8.9548)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 817,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,4.4236,8.7873,4.4507,8.7872,4.4512,8.9547,4.4241,8.9547)"
+            },
+            {
+              "content": "00",
+              "span": {
+                "offset": 818,
+                "length": 2
+              },
+              "confidence": 0.878,
+              "source": "D(1,4.4616,8.7872,4.6105,8.7871,4.611,8.9545,4.462,8.9546)"
+            },
+            {
+              "content": "PM",
+              "span": {
+                "offset": 821,
+                "length": 2
+              },
+              "confidence": 0.847,
+              "source": "D(1,4.6538,8.7871,4.8461,8.7869,4.8465,8.9543,4.6543,8.9545)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 823,
+                "length": 1
+              },
+              "confidence": 0.902,
+              "source": "D(1,4.8596,8.7869,4.8894,8.7869,4.8898,8.9542,4.8601,8.9542)"
+            },
+            {
+              "content": "Call",
+              "span": {
+                "offset": 825,
+                "length": 4
+              },
+              "confidence": 0.878,
+              "source": "D(1,4.9355,8.7868,5.1711,8.7866,5.1714,8.9539,4.9359,8.9542)"
+            },
+            {
+              "content": "(",
+              "span": {
+                "offset": 830,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,5.2144,8.7866,5.2577,8.7866,5.2581,8.9538,5.2148,8.9539)"
+            },
+            {
+              "content": "312",
+              "span": {
+                "offset": 831,
+                "length": 3
+              },
+              "confidence": 0.978,
+              "source": "D(1,5.2631,8.7866,5.4906,8.7867,5.4909,8.953,5.2635,8.9538)"
+            },
+            {
+              "content": ")",
+              "span": {
+                "offset": 834,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,5.496,8.7867,5.5421,8.7868,5.5424,8.9528,5.4963,8.953)"
+            },
+            {
+              "content": "555-0119",
+              "span": {
+                "offset": 836,
+                "length": 8
+              },
+              "confidence": 0.841,
+              "source": "D(1,5.5773,8.7868,6.1676,8.7873,6.1678,8.9506,5.5776,8.9527)"
+            },
+            {
+              "content": "or",
+              "span": {
+                "offset": 845,
+                "length": 2
+              },
+              "confidence": 0.957,
+              "source": "D(1,6.2055,8.7873,6.3382,8.7874,6.3384,8.95,6.2057,8.9505)"
+            },
+            {
+              "content": "visit",
+              "span": {
+                "offset": 848,
+                "length": 5
+              },
+              "confidence": 0.878,
+              "source": "D(1,6.3707,8.7875,6.6199,8.7877,6.62,8.949,6.3709,8.9499)"
+            },
+            {
+              "content": "Room",
+              "span": {
+                "offset": 854,
+                "length": 4
+              },
+              "confidence": 0.875,
+              "source": "D(1,6.6496,8.7877,7.0125,8.788,7.0126,8.9476,6.6498,8.9489)"
+            },
+            {
+              "content": "118",
+              "span": {
+                "offset": 859,
+                "length": 3
+              },
+              "confidence": 0.657,
+              "source": "D(1,7.064,8.788,7.2833,8.7882,7.2833,8.9466,7.064,8.9474)"
+            },
+            {
+              "content": "in",
+              "span": {
+                "offset": 863,
+                "length": 2
+              },
+              "confidence": 0.846,
+              "source": "D(1,7.3239,8.7883,7.4458,8.7884,7.4458,8.946,7.324,8.9464)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 866,
+                "length": 3
+              },
+              "confidence": 0.999,
+              "source": "D(1,0.8986,8.9927,1.0946,8.9914,1.0955,9.1417,0.8996,9.1431)"
+            },
+            {
+              "content": "Student",
+              "span": {
+                "offset": 870,
+                "length": 7
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.1399,8.991,1.6275,8.9916,1.6279,9.142,1.1407,9.1414)"
+            },
+            {
+              "content": "Union",
+              "span": {
+                "offset": 878,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.6627,8.9918,2.0171,8.9973,2.0171,9.1477,1.663,9.1422)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 883,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.0296,8.9975,2.0648,8.998,2.0648,9.1484,2.0297,9.1479)"
+            },
+            {
+              "content": "Lakeshore",
+              "span": {
+                "offset": 903,
+                "length": 9
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.876,10.3504,2.3715,10.3489,2.3715,10.4792,1.876,10.4772)"
+            },
+            {
+              "content": "Community",
+              "span": {
+                "offset": 913,
+                "length": 9
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.4007,10.3488,2.9366,10.3472,2.9365,10.4814,2.4007,10.4793)"
+            },
+            {
+              "content": "College",
+              "span": {
+                "offset": 923,
+                "length": 7
+              },
+              "confidence": 0.977,
+              "source": "D(1,2.959,10.3471,3.3043,10.3461,3.3043,10.4829,2.959,10.4815)"
+            },
+            {
+              "content": "is",
+              "span": {
+                "offset": 931,
+                "length": 2
+              },
+              "confidence": 0.991,
+              "source": "D(1,3.3402,10.346,3.4164,10.3458,3.4164,10.4833,3.3401,10.483)"
+            },
+            {
+              "content": "an",
+              "span": {
+                "offset": 934,
+                "length": 2
+              },
+              "confidence": 0.978,
+              "source": "D(1,3.4433,10.3456,3.5576,10.3456,3.5576,10.4835,3.4433,10.4835)"
+            },
+            {
+              "content": "equal",
+              "span": {
+                "offset": 937,
+                "length": 5
+              },
+              "confidence": 0.985,
+              "source": "D(1,3.589,10.3455,3.8402,10.3453,3.8402,10.4836,3.589,10.4835)"
+            },
+            {
+              "content": "opportunity",
+              "span": {
+                "offset": 943,
+                "length": 11
+              },
+              "confidence": 0.987,
+              "source": "D(1,3.8693,10.3453,4.3873,10.3447,4.3873,10.4837,3.8693,10.4836)"
+            },
+            {
+              "content": "institution",
+              "span": {
+                "offset": 955,
+                "length": 11
+              },
+              "confidence": 0.188,
+              "source": "D(1,4.4097,10.3447,4.8492,10.3443,4.8492,10.4838,4.4097,10.4837)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 966,
+                "length": 1
+              },
+              "confidence": 0.884,
+              "source": "D(1,4.8581,10.3442,4.8806,10.3442,4.8806,10.4838,4.8581,10.4838)"
+            },
+            {
+              "content": "Fictional",
+              "span": {
+                "offset": 968,
+                "length": 9
+              },
+              "confidence": 0.476,
+              "source": "D(1,4.9187,10.3442,5.2999,10.3443,5.2999,10.4829,4.9187,10.4838)"
+            },
+            {
+              "content": "sample",
+              "span": {
+                "offset": 978,
+                "length": 6
+              },
+              "confidence": 0.99,
+              "source": "D(1,5.3335,10.3443,5.6653,10.3446,5.6653,10.4816,5.3335,10.4828)"
+            },
+            {
+              "content": "for",
+              "span": {
+                "offset": 985,
+                "length": 3
+              },
+              "confidence": 0.994,
+              "source": "D(1,5.69,10.3447,5.8201,10.3448,5.8201,10.4811,5.69,10.4815)"
+            },
+            {
+              "content": "software",
+              "span": {
+                "offset": 989,
+                "length": 8
+              },
+              "confidence": 0.985,
+              "source": "D(1,5.8425,10.3448,6.2371,10.3452,6.2371,10.4796,5.8425,10.481)"
+            },
+            {
+              "content": "testing",
+              "span": {
+                "offset": 998,
+                "length": 7
+              },
+              "confidence": 0.96,
+              "source": "D(1,6.2618,10.3452,6.5757,10.3455,6.5757,10.4784,6.2618,10.4795)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 1005,
+                "length": 1
+              },
+              "confidence": 0.99,
+              "source": "D(1,6.5779,10.3455,6.6116,10.3455,6.6116,10.4783,6.5779,10.4784)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "Welcome Week 2026",
+              "source": "D(1,0.9717,0.981,6.4291,0.9825,6.429,1.4485,0.9716,1.4471)",
+              "span": {
+                "offset": 19,
+                "length": 17
+              }
+            },
+            {
+              "content": "August 17-21",
+              "source": "D(1,0.9837,1.597,2.4715,1.5944,2.4725,1.8581,0.9847,1.8633)",
+              "span": {
+                "offset": 37,
+                "length": 12
+              }
+            },
+            {
+              "content": "Main Quad",
+              "source": "D(1,2.8057,1.6167,4.0441,1.6266,4.0425,1.8327,2.8057,1.8227)",
+              "span": {
+                "offset": 50,
+                "length": 9
+              }
+            },
+            {
+              "content": "WELCOME WEEK",
+              "source": "D(1,3.1584,2.7377,5.3416,2.7368,5.3416,2.9556,3.1584,2.9562)",
+              "span": {
+                "offset": 60,
+                "length": 12
+              }
+            },
+            {
+              "content": "CLUB FAIR",
+              "source": "D(1,6.6282,3.1139,7.2507,3.1139,7.2507,3.2297,6.6282,3.2297)",
+              "span": {
+                "offset": 73,
+                "length": 9
+              }
+            },
+            {
+              "content": "Events this week",
+              "source": "D(1,0.7398,4.1384,2.3263,4.1384,2.3263,4.3318,0.7398,4.3318)",
+              "span": {
+                "offset": 105,
+                "length": 16
+              }
+            },
+            {
+              "content": ". Mon 10:00 AM Campus tour. Meet at the steps",
+              "source": "D(1,0.8005,4.4499,4.0819,4.4499,4.0819,4.6168,0.8005,4.6168)",
+              "span": {
+                "offset": 123,
+                "length": 45
+              }
+            },
+            {
+              "content": "of Founders Hall.",
+              "source": "D(1,1.0376,4.6493,2.1603,4.6476,2.1605,4.8064,1.0378,4.8082)",
+              "span": {
+                "offset": 169,
+                "length": 17
+              }
+            },
+            {
+              "content": ". Tue 12:00 PM Club fair on the Main Quad.",
+              "source": "D(1,0.8026,4.8932,3.7955,4.8922,3.7956,5.052,0.8026,5.053)",
+              "span": {
+                "offset": 188,
+                "length": 42
+              }
+            },
+            {
+              "content": ". Wed 4:00 PM Financial aid drop-in, Student",
+              "source": "D(1,0.8026,5.1379,3.8889,5.1379,3.8889,5.3038,0.8026,5.3038)",
+              "span": {
+                "offset": 232,
+                "length": 44
+              }
+            },
+            {
+              "content": "Services Room 118.",
+              "source": "D(1,1.0392,5.337,2.3678,5.3351,2.368,5.4926,1.0394,5.4944)",
+              "span": {
+                "offset": 277,
+                "length": 18
+              }
+            },
+            {
+              "content": ". Thu 6:30 PM Movie night on the lawn. Bring a",
+              "source": "D(1,0.8026,5.5747,4.012,5.585,4.0114,5.758,0.8024,5.744)",
+              "span": {
+                "offset": 297,
+                "length": 46
+              }
+            },
+            {
+              "content": "blanket.",
+              "source": "D(1,1.036,5.7888,1.5634,5.7952,1.5616,5.9463,1.0348,5.9398)",
+              "span": {
+                "offset": 344,
+                "length": 8
+              }
+            },
+            {
+              "content": ". Fri 11:00 AM Free lunch while supplies last.",
+              "source": "D(1,0.8026,6.0176,3.875,6.026,3.8744,6.1989,0.8024,6.1874)",
+              "span": {
+                "offset": 354,
+                "length": 46
+              }
+            },
+            {
+              "content": "Get connected",
+              "source": "D(1,4.4119,4.1409,5.7732,4.1409,5.7732,4.3296,4.4119,4.3296)",
+              "span": {
+                "offset": 405,
+                "length": 13
+              }
+            },
+            {
+              "content": "New to Lakeshore? Join us for orientation and",
+              "source": "D(1,4.4035,4.4498,7.396,4.449,7.396,4.616,4.4036,4.6168)",
+              "span": {
+                "offset": 420,
+                "length": 45
+              }
+            },
+            {
+              "content": "meet the people who will help you succeed.",
+              "source": "D(1,4.4035,4.6494,7.2258,4.6484,7.2259,4.8257,4.4036,4.8266)",
+              "span": {
+                "offset": 466,
+                "length": 42
+              }
+            },
+            {
+              "content": "Sessions run every morning at 9:00 AM in the",
+              "source": "D(1,4.4035,4.8461,7.3669,4.845,7.367,5.0197,4.4036,5.0207)",
+              "span": {
+                "offset": 509,
+                "length": 44
+              }
+            },
+            {
+              "content": "Student Union. Register ahead to save your seat,",
+              "source": "D(1,4.4036,5.0473,7.5953,5.0497,7.5952,5.2249,4.4034,5.2225)",
+              "span": {
+                "offset": 554,
+                "length": 48
+              }
+            },
+            {
+              "content": "or just drop in.",
+              "source": "D(1,4.4036,5.2556,5.3416,5.2556,5.3416,5.424,4.4036,5.424)",
+              "span": {
+                "offset": 603,
+                "length": 16
+              }
+            },
+            {
+              "content": "Scan the code to register:",
+              "source": "D(1,4.4036,5.5698,6.209,5.5698,6.209,5.7417,4.4036,5.7417)",
+              "span": {
+                "offset": 621,
+                "length": 26
+              }
+            },
+            {
+              "content": "or visit https://www.example.org/welcome",
+              "source": "D(1,4.4034,7.1912,6.9685,7.188,6.9687,7.3508,4.4036,7.354)",
+              "span": {
+                "offset": 708,
+                "length": 40
+              }
+            },
+            {
+              "content": "Need help?",
+              "source": "D(1,0.9037,8.5239,1.8127,8.5239,1.8127,8.709,0.9037,8.709)",
+              "span": {
+                "offset": 750,
+                "length": 10
+              }
+            },
+            {
+              "content": "Student Services is open Monday to Friday, 8:00 AM to 5:00 PM. Call (312) 555-0119 or visit Room 118 in",
+              "source": "D(1,0.9032,8.7901,7.4458,8.7856,7.4459,8.9525,0.9034,8.9572)",
+              "span": {
+                "offset": 762,
+                "length": 103
+              }
+            },
+            {
+              "content": "the Student Union.",
+              "source": "D(1,0.8986,8.9883,2.0655,8.9936,2.0648,9.1484,0.8979,9.1431)",
+              "span": {
+                "offset": 866,
+                "length": 18
+              }
+            },
+            {
+              "content": "Lakeshore Community College is an equal opportunity institution. Fictional sample for software testing.",
+              "source": "D(1,1.876,10.3441,6.6116,10.3441,6.6116,10.4839,1.876,10.4839)",
+              "span": {
+                "offset": 903,
+                "length": 103
+              }
+            }
+          ],
+          "barcodes": [
+            {
+              "kind": "QRCode",
+              "value": "https://www.example.org/welcome",
+              "source": "D(1,4.4769,5.8737,5.6279,5.8737,5.6279,7.0196,4.4769,7.0196)",
+              "span": {
+                "offset": 649,
+                "length": 57
+              },
+              "confidence": 1
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "content": "Welcome Week 2026",
+          "source": "D(1,0.9717,0.981,6.4291,0.9825,6.429,1.4485,0.9716,1.4471)",
+          "span": {
+            "offset": 19,
+            "length": 17
+          }
+        },
+        {
+          "role": "pageHeader",
+          "content": "August 17-21",
+          "source": "D(1,0.9837,1.597,2.4715,1.5918,2.4725,1.8581,0.9847,1.8633)",
+          "span": {
+            "offset": 37,
+            "length": 12
+          }
+        },
+        {
+          "content": "Main Quad",
+          "source": "D(1,2.8057,1.6167,4.0441,1.6266,4.0425,1.8327,2.804,1.8227)",
+          "span": {
+            "offset": 50,
+            "length": 9
+          }
+        },
+        {
+          "content": "WELCOME WEEK",
+          "source": "D(1,3.1584,2.7377,5.3416,2.7368,5.3416,2.9556,3.1584,2.9565)",
+          "span": {
+            "offset": 60,
+            "length": 12
+          }
+        },
+        {
+          "content": "CLUB FAIR",
+          "source": "D(1,6.6282,3.1139,7.2507,3.1139,7.2507,3.2297,6.6282,3.2297)",
+          "span": {
+            "offset": 73,
+            "length": 9
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "Events this week",
+          "source": "D(1,0.7398,4.1384,2.3263,4.1384,2.3263,4.3318,0.7398,4.3318)",
+          "span": {
+            "offset": 103,
+            "length": 18
+          }
+        },
+        {
+          "content": ". Mon 10:00 AM Campus tour. Meet at the steps of Founders Hall.",
+          "source": "D(1,0.8005,4.4499,4.0819,4.4499,4.0819,4.8082,0.8005,4.8082)",
+          "span": {
+            "offset": 123,
+            "length": 63
+          }
+        },
+        {
+          "content": ". Tue 12:00 PM Club fair on the Main Quad.",
+          "source": "D(1,0.8026,4.8932,3.7955,4.8922,3.7956,5.052,0.8026,5.053)",
+          "span": {
+            "offset": 188,
+            "length": 42
+          }
+        },
+        {
+          "content": ". Wed 4:00 PM Financial aid drop-in, Student Services Room 118.",
+          "source": "D(1,0.8026,5.1379,3.8889,5.1379,3.8889,5.4944,0.8026,5.4944)",
+          "span": {
+            "offset": 232,
+            "length": 63
+          }
+        },
+        {
+          "content": ". Thu 6:30 PM Movie night on the lawn. Bring a blanket.",
+          "source": "D(1,0.8026,5.5747,4.012,5.585,4.0109,5.9541,0.8015,5.9438)",
+          "span": {
+            "offset": 297,
+            "length": 55
+          }
+        },
+        {
+          "content": ". Fri 11:00 AM Free lunch while supplies last.",
+          "source": "D(1,0.8026,6.0144,3.875,6.026,3.8744,6.1989,0.802,6.1874)",
+          "span": {
+            "offset": 354,
+            "length": 46
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "Get connected",
+          "source": "D(1,4.4119,4.1409,5.7732,4.1409,5.7732,4.3296,4.4119,4.3296)",
+          "span": {
+            "offset": 403,
+            "length": 15
+          }
+        },
+        {
+          "content": "New to Lakeshore? Join us for orientation and meet the people who will help you succeed. Sessions run every morning at 9:00 AM in the Student Union. Register ahead to save your seat, or just drop in.",
+          "source": "D(1,4.4032,4.4498,7.5952,4.449,7.5954,5.4234,4.4035,5.4243)",
+          "span": {
+            "offset": 420,
+            "length": 199
+          }
+        },
+        {
+          "content": "Scan the code to register:",
+          "source": "D(1,4.4036,5.5698,6.209,5.5698,6.209,5.7417,4.4036,5.7417)",
+          "span": {
+            "offset": 621,
+            "length": 26
+          }
+        },
+        {
+          "content": ":barcode:",
+          "source": "D(1,4.4769,5.8737,5.6279,5.8737,5.6279,7.0196,4.4769,7.0196)",
+          "span": {
+            "offset": 649,
+            "length": 57
+          }
+        },
+        {
+          "content": "or visit https://www.example.org/welcome",
+          "source": "D(1,4.4034,7.1912,6.9685,7.188,6.9687,7.3508,4.4036,7.354)",
+          "span": {
+            "offset": 708,
+            "length": 40
+          }
+        },
+        {
+          "content": "Need help?",
+          "source": "D(1,0.9037,8.5239,1.8127,8.5239,1.8127,8.709,0.9037,8.709)",
+          "span": {
+            "offset": 750,
+            "length": 10
+          }
+        },
+        {
+          "content": "Student Services is open Monday to Friday, 8:00 AM to 5:00 PM. Call (312) 555-0119 or visit Room 118 in the Student Union.",
+          "source": "D(1,0.8976,8.7901,7.4458,8.7856,7.4461,9.1447,0.8979,9.1492)",
+          "span": {
+            "offset": 762,
+            "length": 122
+          }
+        },
+        {
+          "role": "pageFooter",
+          "content": "Lakeshore Community College is an equal opportunity institution. Fictional sample for software testing.",
+          "source": "D(1,1.876,10.3441,6.6116,10.3441,6.6116,10.4839,1.876,10.4839)",
+          "span": {
+            "offset": 886,
+            "length": 124
+          }
+        }
+      ],
+      "sections": [
+        {
+          "span": {
+            "offset": 0,
+            "length": 884
+          },
+          "elements": [
+            "/sections/1",
+            "/sections/2",
+            "/sections/3"
+          ]
+        },
+        {
+          "span": {
+            "offset": 0,
+            "length": 96
+          },
+          "elements": [
+            "/figures/0"
+          ]
+        },
+        {
+          "span": {
+            "offset": 103,
+            "length": 297
+          },
+          "elements": [
+            "/paragraphs/5",
+            "/paragraphs/6",
+            "/paragraphs/7",
+            "/paragraphs/8",
+            "/paragraphs/9",
+            "/paragraphs/10"
+          ]
+        },
+        {
+          "span": {
+            "offset": 403,
+            "length": 481
+          },
+          "elements": [
+            "/paragraphs/11",
+            "/paragraphs/12",
+            "/paragraphs/13",
+            "/paragraphs/14",
+            "/paragraphs/15",
+            "/paragraphs/16",
+            "/paragraphs/17"
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "source": "D(1,0.7351,0.5536,7.7529,0.5485,7.7488,3.9102,0.7362,3.9102)",
+          "span": {
+            "offset": 17,
+            "length": 79
+          },
+          "elements": [
+            "/paragraphs/0",
+            "/paragraphs/1",
+            "/paragraphs/2",
+            "/paragraphs/3",
+            "/paragraphs/4"
+          ],
+          "id": "1.1",
+          "role": "pageHeader"
+        }
+      ],
+      "analyzerId": "prebuilt-layout",
+      "mimeType": "application/pdf"
+    }
+  ]
+}

@@ -27,6 +27,7 @@ requirements.txt
 **/requirements.txt
 
 eval/samples/
+eval/fixtures/private/
 
 build/
 *.egg-info/

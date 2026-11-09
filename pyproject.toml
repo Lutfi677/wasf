@@ -19,6 +19,8 @@ dependencies = [
     "numpy>=2,<3",
     "python-multipart>=0.0.9,<1",
     "uvicorn>=0.34,<1",
+    "pdfminer.six>=20260107,<20270000",
+    "python-bidi>=0.6,<0.7",
 ]
 
 [project.optional-dependencies]
@@ -52,7 +54,7 @@ packages = []
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = [".", "eval/samples_tools"]
+pythonpath = [".", "eval/samples_tools", "eval/harness"]
 
 [tool.ruff]
 line-length = 140

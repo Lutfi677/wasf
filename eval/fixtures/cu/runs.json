@@ -1,0 +1,267 @@
+{
+  "calls": {
+    "prebuilt-documentSearch/01": {
+      "recorded": "2026-11-09T15:18:16+00:00",
+      "seconds": 16.6,
+      "usage": {
+        "documentPagesStandard": 3,
+        "contextualizationTokens": 3000,
+        "tokens": {
+          "gpt-5.2-input": 9663,
+          "gpt-5.2-output": 1092
+        }
+      }
+    },
+    "prebuilt-documentSearch/02": {
+      "recorded": "2026-11-09T15:18:33+00:00",
+      "seconds": 16.9,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4818,
+          "gpt-5.2-cached-input": 3200,
+          "gpt-5.2-output": 324
+        }
+      }
+    },
+    "prebuilt-documentSearch/03": {
+      "recorded": "2026-11-09T15:19:18+00:00",
+      "seconds": 45.3,
+      "usage": {
+        "documentPagesStandard": 1,
+        "contextualizationTokens": 1000,
+        "tokens": {
+          "gpt-5.2-input": 4876,
+          "gpt-5.2-output": 303,
+          "gpt-5.2-cached-input": 3200
+        }
+      }
+    },
+    "prebuilt-documentSearch/04": {
+      "recorded": "2026-11-09T15:19:25+00:00",
+      "seconds": 7.2,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4261,
+          "gpt-5.2-cached-input": 3200,
+          "gpt-5.2-output": 258
+        }
+      }
+    },
+    "prebuilt-documentSearch/05": {
+      "recorded": "2026-11-09T15:20:04+00:00",
+      "seconds": 38.9,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4143,
+          "gpt-5.2-cached-input": 3200,
+          "gpt-5.2-output": 262
+        }
+      }
+    },
+    "prebuilt-documentSearch/06": {
+      "recorded": "2026-11-09T15:20:53+00:00",
+      "seconds": 48.7,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 5483,
+          "gpt-5.2-output": 589,
+          "gpt-5.2-cached-input": 3200
+        }
+      }
+    },
+    "prebuilt-documentSearch/07": {
+      "recorded": "2026-11-09T15:21:48+00:00",
+      "seconds": 55.2,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 6829,
+          "gpt-5.2-output": 646,
+          "gpt-5.2-cached-input": 3200
+        }
+      }
+    },
+    "prebuilt-documentSearch/08": {
+      "recorded": "2026-11-09T15:21:58+00:00",
+      "seconds": 10.2,
+      "usage": {
+        "documentPagesStandard": 1,
+        "contextualizationTokens": 1000,
+        "tokens": {
+          "gpt-5.2-input": 4714,
+          "gpt-5.2-output": 305,
+          "gpt-5.2-cached-input": 3200
+        }
+      }
+    },
+    "prebuilt-layout/01": {
+      "recorded": "2026-11-09T15:17:36+00:00",
+      "seconds": 4.4,
+      "usage": {
+        "documentPagesStandard": 3
+      }
+    },
+    "prebuilt-layout/02": {
+      "recorded": "2026-11-09T15:17:40+00:00",
+      "seconds": 3.8,
+      "usage": {
+        "documentPagesStandard": 2
+      }
+    },
+    "prebuilt-layout/03": {
+      "recorded": "2026-11-09T15:16:36+00:00",
+      "seconds": 8.9,
+      "usage": {
+        "documentPagesStandard": 1
+      }
+    },
+    "prebuilt-layout/04": {
+      "recorded": "2026-11-09T15:17:44+00:00",
+      "seconds": 3.6,
+      "usage": {
+        "documentPagesStandard": 2
+      }
+    },
+    "prebuilt-layout/05": {
+      "recorded": "2026-11-09T15:17:48+00:00",
+      "seconds": 4.3,
+      "usage": {
+        "documentPagesStandard": 2
+      }
+    },
+    "prebuilt-layout/06": {
+      "recorded": "2026-11-09T15:17:52+00:00",
+      "seconds": 3.7,
+      "usage": {
+        "documentPagesStandard": 2
+      }
+    },
+    "prebuilt-layout/07": {
+      "recorded": "2026-11-09T15:17:55+00:00",
+      "seconds": 3.7,
+      "usage": {
+        "documentPagesStandard": 2
+      }
+    },
+    "prebuilt-layout/08": {
+      "recorded": "2026-11-09T15:17:59+00:00",
+      "seconds": 3.6,
+      "usage": {
+        "documentPagesStandard": 1
+      }
+    },
+    "wasf_bakeoff_fields/01": {
+      "recorded": "2026-11-09T15:22:40+00:00",
+      "seconds": 42.0,
+      "usage": {
+        "documentPagesStandard": 3,
+        "contextualizationTokens": 3000,
+        "tokens": {
+          "gpt-5.2-input": 5056,
+          "gpt-5.2-cached-input": 2816,
+          "gpt-5.2-output": 238
+        }
+      }
+    },
+    "wasf_bakeoff_fields/02": {
+      "recorded": "2026-11-09T15:22:47+00:00",
+      "seconds": 7.0,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4921,
+          "gpt-5.2-cached-input": 3200,
+          "gpt-5.2-output": 228
+        }
+      }
+    },
+    "wasf_bakeoff_fields/03": {
+      "recorded": "2026-11-09T15:23:26+00:00",
+      "seconds": 39.1,
+      "usage": {
+        "documentPagesStandard": 1,
+        "contextualizationTokens": 1000,
+        "tokens": {
+          "gpt-5.2-input": 3834,
+          "gpt-5.2-cached-input": 3200,
+          "gpt-5.2-output": 190
+        }
+      }
+    },
+    "wasf_bakeoff_fields/04": {
+      "recorded": "2026-11-09T15:24:08+00:00",
+      "seconds": 42.2,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4364,
+          "gpt-5.2-cached-input": 3200,
+          "gpt-5.2-output": 192
+        }
+      }
+    },
+    "wasf_bakeoff_fields/05": {
+      "recorded": "2026-11-09T15:24:19+00:00",
+      "seconds": 10.2,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4246,
+          "gpt-5.2-cached-input": 3328,
+          "gpt-5.2-output": 243
+        }
+      }
+    },
+    "wasf_bakeoff_fields/06": {
+      "recorded": "2026-11-09T15:24:26+00:00",
+      "seconds": 7.3,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4107,
+          "gpt-5.2-cached-input": 3328,
+          "gpt-5.2-output": 193
+        }
+      }
+    },
+    "wasf_bakeoff_fields/07": {
+      "recorded": "2026-11-09T15:25:05+00:00",
+      "seconds": 38.8,
+      "usage": {
+        "documentPagesStandard": 2,
+        "contextualizationTokens": 2000,
+        "tokens": {
+          "gpt-5.2-input": 4592,
+          "gpt-5.2-cached-input": 3328,
+          "gpt-5.2-output": 264
+        }
+      }
+    },
+    "wasf_bakeoff_fields/08": {
+      "recorded": "2026-11-09T15:25:47+00:00",
+      "seconds": 42.1,
+      "usage": {
+        "documentPagesStandard": 1,
+        "contextualizationTokens": 1000,
+        "tokens": {
+          "gpt-5.2-input": 3850,
+          "gpt-5.2-cached-input": 3200,
+          "gpt-5.2-output": 235
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "analyzers": {
+    "prebuilt-layout": "prebuilt-layout 2025-11-01",
+    "prebuilt-documentSearch": "prebuilt-documentSearch 2025-11-01",
+    "wasf_bakeoff_fields": "wasf_bakeoff_fields 2025-11-01"
+  },
+  "samples": {
+    "01": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "headings": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        },
+        "heading_precision": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        },
+        "table_cells": {
+          "found": 33,
+          "of": 36,
+          "percent": 91.7
+        },
+        "header_cells": {
+          "found": 1,
+          "of": 4,
+          "percent": 25.0
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "headings": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        },
+        "heading_precision": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        },
+        "table_cells": {
+          "found": 33,
+          "of": 36,
+          "percent": 91.7
+        },
+        "header_cells": {
+          "found": 1,
+          "of": 4,
+          "percent": 25.0
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "headings": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        },
+        "heading_precision": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        },
+        "table_cells": {
+          "found": 33,
+          "of": 36,
+          "percent": 91.7
+        },
+        "header_cells": {
+          "found": 1,
+          "of": 4,
+          "percent": 25.0
+        },
+        "title": {
+          "found": 43,
+          "of": 60,
+          "percent": 71.7
+        },
+        "language": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        }
+      }
+    },
+    "02": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        },
+        "heading_precision": {
+          "found": 6,
+          "of": 7,
+          "percent": 85.7
+        },
+        "table_cells": {
+          "found": 66,
+          "of": 66,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 9,
+          "of": 21,
+          "percent": 42.9
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        },
+        "heading_precision": {
+          "found": 6,
+          "of": 7,
+          "percent": 85.7
+        },
+        "table_cells": {
+          "found": 66,
+          "of": 66,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 9,
+          "of": 21,
+          "percent": 42.9
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        },
+        "heading_precision": {
+          "found": 6,
+          "of": 7,
+          "percent": 85.7
+        },
+        "table_cells": {
+          "found": 66,
+          "of": 66,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 9,
+          "of": 21,
+          "percent": 42.9
+        },
+        "title": {
+          "found": 32,
+          "of": 60,
+          "percent": 53.3
+        },
+        "language": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        }
+      }
+    },
+    "03": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 2,
+          "of": 4,
+          "percent": 50.0
+        },
+        "heading_precision": {
+          "found": 2,
+          "of": 2,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 10,
+          "of": 10,
+          "percent": 100.0
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 2,
+          "of": 4,
+          "percent": 50.0
+        },
+        "heading_precision": {
+          "found": 2,
+          "of": 2,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 10,
+          "of": 10,
+          "percent": 100.0
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 2,
+          "of": 4,
+          "percent": 50.0
+        },
+        "heading_precision": {
+          "found": 2,
+          "of": 2,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 10,
+          "of": 10,
+          "percent": 100.0
+        },
+        "title": {
+          "found": 17,
+          "of": 45,
+          "percent": 37.8
+        },
+        "language": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        }
+      }
+    },
+    "04": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 8,
+          "of": 9,
+          "percent": 88.9
+        },
+        "heading_precision": {
+          "found": 8,
+          "of": 8,
+          "percent": 100.0
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 8,
+          "of": 9,
+          "percent": 88.9
+        },
+        "heading_precision": {
+          "found": 8,
+          "of": 8,
+          "percent": 100.0
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 8,
+          "of": 9,
+          "percent": 88.9
+        },
+        "heading_precision": {
+          "found": 8,
+          "of": 8,
+          "percent": 100.0
+        },
+        "title": {
+          "found": 71,
+          "of": 72,
+          "percent": 98.6
+        },
+        "language": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        }
+      }
+    },
+    "05": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 1580,
+          "of": 1686,
+          "percent": 93.7
+        },
+        "table_cells": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 1580,
+          "of": 1686,
+          "percent": 93.7
+        },
+        "table_cells": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 1580,
+          "of": 1686,
+          "percent": 93.7
+        },
+        "table_cells": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        },
+        "title": {
+          "found": 15,
+          "of": 83,
+          "percent": 18.1
+        },
+        "language": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        }
+      }
+    },
+    "06": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "heading_precision": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "heading_precision": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "heading_precision": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        },
+        "title": {
+          "found": 40,
+          "of": 64,
+          "percent": 62.5
+        },
+        "language": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        }
+      }
+    },
+    "07": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 784,
+          "of": 807,
+          "percent": 97.1
+        },
+        "table_cells": {
+          "found": 7,
+          "of": 15,
+          "percent": 46.7
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 21,
+          "of": 21,
+          "percent": 100.0
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 784,
+          "of": 807,
+          "percent": 97.1
+        },
+        "table_cells": {
+          "found": 7,
+          "of": 15,
+          "percent": 46.7
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 21,
+          "of": 21,
+          "percent": 100.0
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 784,
+          "of": 807,
+          "percent": 97.1
+        },
+        "table_cells": {
+          "found": 7,
+          "of": 15,
+          "percent": 46.7
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 21,
+          "of": 21,
+          "percent": 100.0
+        },
+        "title": {
+          "found": 66,
+          "of": 66,
+          "percent": 100.0
+        },
+        "language": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        }
+      }
+    },
+    "08": {
+      "prebuilt-layout": {
+        "text": {
+          "found": 14,
+          "of": 16,
+          "percent": 87.5
+        }
+      },
+      "prebuilt-documentSearch": {
+        "text": {
+          "found": 14,
+          "of": 16,
+          "percent": 87.5
+        }
+      },
+      "wasf_bakeoff_fields": {
+        "text": {
+          "found": 14,
+          "of": 16,
+          "percent": 87.5
+        },
+        "title": {
+          "found": 20,
+          "of": 31,
+          "percent": 64.5
+        }
+      }
+    }
+  },
+  "usage": {
+    "prebuilt-documentSearch": {
+      "calls": 8,
+      "seconds": 239.0,
+      "slowest_seconds": 55.2,
+      "pages": 15,
+      "contextualization_tokens": 15000,
+      "tokens": {
+        "gpt-5.2-input": 44787,
+        "gpt-5.2-output": 3779,
+        "gpt-5.2-cached-input": 22400
+      }
+    },
+    "prebuilt-layout": {
+      "calls": 8,
+      "seconds": 36.0,
+      "slowest_seconds": 8.9,
+      "pages": 15,
+      "contextualization_tokens": 0,
+      "tokens": {}
+    },
+    "wasf_bakeoff_fields": {
+      "calls": 8,
+      "seconds": 228.7,
+      "slowest_seconds": 42.2,
+      "pages": 15,
+      "contextualization_tokens": 15000,
+      "tokens": {
+        "gpt-5.2-cached-input": 25600,
+        "gpt-5.2-input": 34970,
+        "gpt-5.2-output": 1783
+      }
+    }
+  }
+}

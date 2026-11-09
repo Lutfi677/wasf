@@ -1,0 +1,588 @@
+{
+  "samples": {
+    "01": {
+      "own": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "table_strings": {
+          "found": 33,
+          "of": 36,
+          "percent": 91.7
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        },
+        "lists": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        },
+        "list_items": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "table_strings": {
+          "found": 33,
+          "of": 36,
+          "percent": 91.7
+        },
+        "table_cells": {
+          "found": 33,
+          "of": 36,
+          "percent": 91.7
+        },
+        "header_cells": {
+          "found": 1,
+          "of": 4,
+          "percent": 25.0
+        },
+        "headings": {
+          "found": 5,
+          "of": 6,
+          "percent": 83.3
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 30,
+          "of": 33,
+          "percent": 90.9
+        },
+        "table_strings": {
+          "found": 33,
+          "of": 36,
+          "percent": 91.7
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        }
+      },
+      "own_or_service": {
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        }
+      }
+    },
+    "02": {
+      "own": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "table_strings": {
+          "found": 64,
+          "of": 64,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        },
+        "lists": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "list_items": {
+          "found": 13,
+          "of": 13,
+          "percent": 100.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "table_strings": {
+          "found": 64,
+          "of": 64,
+          "percent": 100.0
+        },
+        "table_cells": {
+          "found": 66,
+          "of": 66,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 9,
+          "of": 21,
+          "percent": 42.9
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 27,
+          "of": 27,
+          "percent": 100.0
+        },
+        "table_strings": {
+          "found": 64,
+          "of": 64,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        }
+      },
+      "own_or_service": {
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        }
+      }
+    },
+    "03": {
+      "own": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 10,
+          "of": 10,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "lists": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        },
+        "list_items": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 10,
+          "of": 10,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 2,
+          "of": 4,
+          "percent": 50.0
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        },
+        "reading_order": {
+          "found": 1,
+          "of": 10,
+          "percent": 10.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 4,
+          "percent": 0.0
+        }
+      },
+      "own_or_service": {
+        "headings": {
+          "found": 4,
+          "of": 4,
+          "percent": 100.0
+        }
+      }
+    },
+    "04": {
+      "own": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 8,
+          "of": 9,
+          "percent": 88.9
+        },
+        "lists": {
+          "found": 2,
+          "of": 2,
+          "percent": 100.0
+        },
+        "list_items": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 8,
+          "of": 9,
+          "percent": 88.9
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 9,
+          "percent": 0.0
+        }
+      },
+      "own_or_service": {
+        "headings": {
+          "found": 8,
+          "of": 9,
+          "percent": 88.9
+        }
+      }
+    },
+    "05": {
+      "own": {
+        "text": {
+          "found": 0,
+          "of": 1686,
+          "percent": 0.0
+        },
+        "table_strings": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 1580,
+          "of": 1686,
+          "percent": 93.7
+        },
+        "table_strings": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "table_cells": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 0,
+          "of": 1686,
+          "percent": 0.0
+        },
+        "table_strings": {
+          "found": 0,
+          "of": 15,
+          "percent": 0.0
+        }
+      }
+    },
+    "06": {
+      "own": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "lists": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        },
+        "list_items": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 5,
+          "percent": 0.0
+        }
+      },
+      "own_or_service": {
+        "headings": {
+          "found": 5,
+          "of": 5,
+          "percent": 100.0
+        }
+      }
+    },
+    "07": {
+      "own": {
+        "text": {
+          "found": 801,
+          "of": 807,
+          "percent": 99.3
+        },
+        "reading_order": {
+          "found": 21,
+          "of": 21,
+          "percent": 100.0
+        },
+        "units": {
+          "found": 10,
+          "of": 13,
+          "percent": 76.9
+        },
+        "mixed_units": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        },
+        "table_strings": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        },
+        "lists": {
+          "found": 1,
+          "of": 1,
+          "percent": 100.0
+        },
+        "list_items": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 800,
+          "of": 807,
+          "percent": 99.1
+        },
+        "reading_order": {
+          "found": 21,
+          "of": 21,
+          "percent": 100.0
+        },
+        "units": {
+          "found": 11,
+          "of": 13,
+          "percent": 84.6
+        },
+        "mixed_units": {
+          "found": 1,
+          "of": 3,
+          "percent": 33.3
+        },
+        "table_strings": {
+          "found": 9,
+          "of": 15,
+          "percent": 60.0
+        },
+        "table_cells": {
+          "found": 9,
+          "of": 15,
+          "percent": 60.0
+        },
+        "header_cells": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 620,
+          "of": 807,
+          "percent": 76.8
+        },
+        "reading_order": {
+          "found": 11,
+          "of": 21,
+          "percent": 52.4
+        },
+        "units": {
+          "found": 11,
+          "of": 13,
+          "percent": 84.6
+        },
+        "mixed_units": {
+          "found": 1,
+          "of": 3,
+          "percent": 33.3
+        },
+        "table_strings": {
+          "found": 15,
+          "of": 15,
+          "percent": 100.0
+        },
+        "headings": {
+          "found": 0,
+          "of": 6,
+          "percent": 0.0
+        }
+      },
+      "own_or_service": {
+        "headings": {
+          "found": 6,
+          "of": 6,
+          "percent": 100.0
+        }
+      }
+    },
+    "08": {
+      "own": {
+        "text": {
+          "found": 16,
+          "of": 16,
+          "percent": 100.0
+        }
+      },
+      "service": {
+        "text": {
+          "found": 14,
+          "of": 16,
+          "percent": 87.5
+        }
+      },
+      "stream": {
+        "text": {
+          "found": 10,
+          "of": 16,
+          "percent": 62.5
+        }
+      }
+    }
+  },
+  "done_when": {
+    "03": {
+      "text": {
+        "target": 100,
+        "value": 100.0,
+        "source": "own",
+        "met": true
+      },
+      "headings": {
+        "target": 50,
+        "value": 100.0,
+        "source": "own_or_service",
+        "met": true
+      },
+      "reading_order": {
+        "target": 100,
+        "value": 100.0,
+        "source": "own",
+        "met": true
+      }
+    },
+    "07": {
+      "text": {
+        "target": 88,
+        "value": 99.3,
+        "source": "own",
+        "met": true
+      },
+      "table_cells": {
+        "target": 50,
+        "value": 60.0,
+        "source": "service",
+        "met": true
+      },
+      "header_cells": {
+        "target": 50,
+        "value": 100.0,
+        "source": "service",
+        "met": true
+      },
+      "reading_order": {
+        "target": 100,
+        "value": 100.0,
+        "source": "own",
+        "met": true
+      }
+    }
+  }
+}

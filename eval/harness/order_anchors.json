@@ -1,0 +1,19 @@
+{
+  "03_welcome_week_flyer.pdf": [
+    {"key": "Welcome Week 2026 and 'August 17-21 | Main Quad'", "anchors": ["Welcome Week 2026", "August 17-21"]},
+    {"key": "Illustration", "anchors": []},
+    {"key": "Events this week (5 items)", "anchors": ["Events this week", "Campus tour"]},
+    {"key": "Get connected: paragraph, QR code, URL", "anchors": ["Get connected", "New to Lakeshore", "or visit https://www.example.org/welcome"]},
+    {"key": "Need help? sidebar", "anchors": ["Need help?", "Student Services is open"]},
+    {"key": "Footer", "anchors": ["equal opportunity institution"]}
+  ],
+  "07_arabic_circular_two_column.pdf": [
+    {"key": "Header: بلدية المدينة النموذجية / دائرة خدمة المراجعين", "anchors": ["Citizen Services Department"]},
+    {"key": "Circular number, then date", "anchors": ["تعميم رقم", "التاريخ"]},
+    {"key": "Subject line", "anchors": ["الموضوع"]},
+    {"key": "RIGHT column sections 1 to 3", "anchors": ["أولا: الهدف", "ثانيا: موعد التطبيق", "ثالثا: الخدمات المشمولة"]},
+    {"key": "LEFT column sections 4 and 5", "anchors": ["رابعا: المستندات المطلوبة", "خامسا: الاستفسارات"]},
+    {"key": "Signature block", "anchors": ["سامي الحداد", "مدير دائرة خدمة المراجعين"]},
+    {"key": "Page 2: table caption, table (right-to-left), chart caption and chart", "anchors": ["جدول ساعات الدوام", "الشكل"]}
+  ]
+}

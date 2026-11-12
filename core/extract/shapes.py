@@ -1,5 +1,7 @@
 from typing import NotRequired, TypedDict
 
+from core.scan.lines import Line as ScanLine
+
 
 class Block(TypedDict):
     id: str
@@ -19,6 +21,7 @@ class Cell(TypedDict):
     column: int
     text: str
     kind: str
+    box: NotRequired[list[float]]
 
 
 class Table(TypedDict):
@@ -35,6 +38,13 @@ class Link(TypedDict):
     target: str | None
 
 
+class Figure(TypedDict):
+    id: str
+    page: int
+    box: list[float]
+    caption: str | None
+
+
 class Page(TypedDict):
     number: int
     width: float
@@ -48,3 +58,6 @@ class Result(TypedDict):
     blocks: list[Block]
     tables: list[Table]
     links: NotRequired[list[Link]]
+    figures: NotRequired[list[Figure]]
+    lines: NotRequired[list[ScanLine]]
+    scan_pages: NotRequired[list[int]]

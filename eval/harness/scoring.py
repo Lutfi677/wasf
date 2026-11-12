@@ -1,12 +1,18 @@
 import difflib
 import itertools
+import json
 import math
+import pathlib
 import re
 import unicodedata
 from fractions import Fraction
 from typing import Any, NamedTuple, TypedDict
 
 from result_types import Block, Cell, Result
+
+from core.scan import line_rule
+from core.scan.crosscheck import Region, digits
+from core.scan.lines import Line, text_of
 
 SPACE = re.compile(r"\s+")
 HYPHEN_BREAK = re.compile(r"-\s+")
@@ -22,7 +28,9 @@ FIXED_TARGETS = {
     ("02", "header_cells"): 100,
     ("05", "parcel_lines_to_person"): 100,
 }
-RULE = "best baseline percent plus half the gap to 100, rounded down to a whole percent"
+PARCEL_COVER = 0.5
+UNPRINTED = json.loads((pathlib.Path(__file__).resolve().parent / "unprinted_notes.json").read_text(encoding="utf-8"))
+RULE ="best baseline percent plus half the gap to 100, rounded down to a whole percent"
 
 
 class Count(TypedDict):
@@ -73,12 +81,19 @@ def logical_body(source: dict[str, Any]) -> str:
     return " ".join(parts)
 
 
-def expected_cells(table: dict[str, Any]) -> list[ExpectedCell]:
+def printed_header(text: str, notes: list[str]) -> str:
+    for note in notes:
+        if text.endswith(note):
+            return text[: -len(note)].rstrip()
+    return text
+
+
+def expected_cells(table: dict[str, Any], notes: list[str] | None = None) -> list[ExpectedCell]:
     header_rows = table.get("header_rows") or [table["header_row"]]
     cells: list[ExpectedCell] = []
     for row_index, row in enumerate(header_rows):
         for column, text in enumerate(row):
-            text = STRUCTURE_NOTE.sub("", text)
+            text = printed_header(STRUCTURE_NOTE.sub("", text), notes or [])
             if text:
                 cells.append(ExpectedCell(row_index, column, text, True))
     header_columns = len(table.get("row_header_columns") or [])
@@ -95,11 +110,12 @@ def expected_cells(table: dict[str, Any]) -> list[ExpectedCell]:
 
 
 def expected_tables(entry: dict[str, Any]) -> list[tuple[list[int], list[ExpectedCell]]]:
+    notes = UNPRINTED.get(pathlib.PurePosixPath(entry.get("file", "")).name, [])
     tables: list[tuple[list[int], list[ExpectedCell]]] = []
     for table in entry.get("tables_expected", []):
-        tables.append((table.get("pages") or [table["page"]], expected_cells(table)))
+        tables.append((table.get("pages") or [table["page"]], expected_cells(table, notes)))
     for table in entry.get("expected_outputs", {}).get("tables", []):
-        tables.append(([table["page"]], expected_cells({"header_row": table["columns"], "rows": table["rows"]})))
+        tables.append(([table["page"]], expected_cells({"header_row": table["columns"], "rows": table["rows"]}, notes)))
     return tables
 
 
@@ -343,6 +359,40 @@ def field_scores(entry: dict[str, Any], values: dict[str, str | None]) -> dict[s
 def with_percent(count: Count) -> dict[str, Any]:
     percent = round(100 * count["found"] / count["of"], 1) if count["of"] else None
     return {"found": count["found"], "of": count["of"], "percent": percent}
+
+
+def on_reference(reference: dict[str, Any], page: int, box: list[float]) -> bool:
+    top, bottom = reference["box"][1], reference["box"][3]
+    shared = min(bottom, box[3]) - max(top, box[1])
+    return page == reference["page"] and shared >= PARCEL_COVER * (bottom - top)
+
+
+def read_wrong(reference: dict[str, Any], lines: list[Line]) -> bool:
+    if not lines:
+        return False
+    reading = digits(" ".join(text_of(line) for line in sorted(lines, key=lambda line: (line["box"][1], line["box"][0]))))
+    return reference["parcel_digits"] not in reading
+
+
+def parcel_scores(reference: list[dict[str, Any]], regions: list[Region], lines: list[Line]) -> dict[str, Any]:
+    sources = sorted({line["source"] for line in lines})
+    routed = [any(on_reference(ref, region["page"], region["box"]) for region in regions) for ref in reference]
+    on_row = {
+        source: [[line for line in lines if line["source"] == source and on_reference(ref, line["page"], line["box"])] for ref in reference]
+        for source in sources
+    }
+    flagged = {source: [any(line_rule.goes_to_person(line) for line in found) for found in rows] for source, rows in on_row.items()}
+    wrong = {source: [read_wrong(ref, found) for ref, found in zip(reference, rows, strict=True)] for source, rows in on_row.items()}
+    unsafe = [any(wrong[source][index] for source in sources) and not routed[index] for index in range(len(reference))]
+    total = len(reference)
+    on_rows = sum(1 for region in regions if any(on_reference(ref, region["page"], region["box"]) for ref in reference))
+    return {
+        "parcel_lines_to_person": with_percent({"found": sum(routed), "of": total}),
+        "line_rule_alone": {source: with_percent({"found": sum(flagged[source]), "of": total}) for source in sources},
+        "read_wrong": {source: sum(wrong[source]) for source in sources},
+        "confidently_wrong": sum(unsafe),
+        "regions": {"total": len(regions), "on_parcel_lines": on_rows, "elsewhere": len(regions) - on_rows},
+    }
 
 
 def target_from(best: Fraction) -> int:

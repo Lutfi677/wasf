@@ -8,9 +8,9 @@
     "01": {
       "pdfminer.six": {
         "text": {
-          "found": 30,
+          "found": 33,
           "of": 33,
-          "percent": 90.9
+          "percent": 100.0
         },
         "headings": {
           "found": 0,
@@ -35,9 +35,9 @@
       },
       "pypdfium2": {
         "text": {
-          "found": 30,
+          "found": 33,
           "of": 33,
-          "percent": 90.9
+          "percent": 100.0
         },
         "headings": {
           "found": 0,
@@ -62,9 +62,9 @@
       },
       "pdftotext": {
         "text": {
-          "found": 30,
+          "found": 33,
           "of": 33,
-          "percent": 90.9
+          "percent": 100.0
         },
         "headings": {
           "found": 0,

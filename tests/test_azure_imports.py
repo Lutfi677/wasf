@@ -114,6 +114,18 @@ def test_only_the_provider_imports_content_understanding():
     assert importers == {PROVIDER}
 
 
+def test_local_and_recorded_providers_do_not_import_azure_packages():
+    folders = (ROOT / "providers" / "local", ROOT / "providers" / "recorded")
+    offenders = {path.name: azure_imports(path.read_text(encoding="utf-8-sig")) for folder in folders for path in folder.rglob("*.py")}
+    assert offenders
+    assert {name: found for name, found in offenders.items() if found} == {}
+
+
+def test_the_service_provider_class_does_not_import_azure_packages():
+    source = (ROOT / "providers" / "azure" / "cu_provider.py").read_text(encoding="utf-8-sig")
+    assert azure_imports(source) == set()
+
+
 def test_harness_does_not_import_azure_packages():
     offenders = {path.name: azure_imports(path.read_text(encoding="utf-8-sig")) for path in HARNESS.rglob("*.py")}
     assert {name: found for name, found in offenders.items() if found} == {}

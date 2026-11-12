@@ -3,14 +3,14 @@
     "01": {
       "own": {
         "text": {
-          "found": 30,
+          "found": 33,
           "of": 33,
-          "percent": 90.9
+          "percent": 100.0
         },
         "table_strings": {
-          "found": 33,
+          "found": 36,
           "of": 36,
-          "percent": 91.7
+          "percent": 100.0
         },
         "headings": {
           "found": 6,
@@ -30,24 +30,24 @@
       },
       "service": {
         "text": {
-          "found": 30,
+          "found": 33,
           "of": 33,
-          "percent": 90.9
+          "percent": 100.0
         },
         "table_strings": {
-          "found": 33,
+          "found": 36,
           "of": 36,
-          "percent": 91.7
+          "percent": 100.0
         },
         "table_cells": {
-          "found": 33,
+          "found": 36,
           "of": 36,
-          "percent": 91.7
+          "percent": 100.0
         },
         "header_cells": {
-          "found": 1,
+          "found": 4,
           "of": 4,
-          "percent": 25.0
+          "percent": 100.0
         },
         "headings": {
           "found": 5,
@@ -57,14 +57,14 @@
       },
       "stream": {
         "text": {
-          "found": 30,
+          "found": 33,
           "of": 33,
-          "percent": 90.9
+          "percent": 100.0
         },
         "table_strings": {
-          "found": 33,
+          "found": 36,
           "of": 36,
-          "percent": 91.7
+          "percent": 100.0
         },
         "headings": {
           "found": 0,

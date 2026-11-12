@@ -37,6 +37,9 @@ azure = [
     "azure-ai-contentunderstanding>=1.1.0,<2",
     "openai>=1.60.0,<4",
 ]
+ocr = [
+    "pytesseract==0.3.13",
+]
 samples = [
     "reportlab==5.1.0",
     "pikepdf==10.17.0",

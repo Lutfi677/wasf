@@ -1,0 +1,10 @@
+{
+  "05": {
+    "basis": "Row positions from render_scan_page in eval/samples_tools/make_samples.py: page 1700 by 2200 pixels, margin 170, line pitch 50, weak rows 19 to 21 on page 1 (tops 1120, 1170, 1220), moved down 5 pixels for the 1.1 degree skew at the middle of the text. Boxes are fractions of the page.",
+    "parcel_lines": [
+      {"page": 1, "box": [0.1, 0.5114, 0.9, 0.5341], "parcel_digits": "14203007"},
+      {"page": 1, "box": [0.1, 0.5341, 0.9, 0.5568], "parcel_digits": "14203008"},
+      {"page": 1, "box": [0.1, 0.5568, 0.9, 0.5795], "parcel_digits": "14203011"}
+    ]
+  }
+}

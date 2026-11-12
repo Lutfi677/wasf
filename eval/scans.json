@@ -1,0 +1,54 @@
+{
+  "engine": "wasf-scan with tesseract 5.4.0.20240606 and prebuilt-layout",
+  "rule": {
+    "average_minimum": 85.0,
+    "word_minimum": 50.0
+  },
+  "samples": {
+    "05": {
+      "lines": {
+        "tesseract": {
+          "lines": 39,
+          "flagged": 8
+        },
+        "service": {
+          "lines": 51,
+          "flagged": 3
+        }
+      },
+      "reasons": {
+        "digits_differ": 2,
+        "low_confidence_service": 3,
+        "low_confidence_tesseract": 8,
+        "not_in_service": 1
+      },
+      "parcel_lines_to_person": {
+        "found": 3,
+        "of": 3,
+        "percent": 100.0
+      },
+      "line_rule_alone": {
+        "service": {
+          "found": 2,
+          "of": 3,
+          "percent": 66.7
+        },
+        "tesseract": {
+          "found": 3,
+          "of": 3,
+          "percent": 100.0
+        }
+      },
+      "read_wrong": {
+        "service": 2,
+        "tesseract": 3
+      },
+      "confidently_wrong": 0,
+      "regions": {
+        "total": 8,
+        "on_parcel_lines": 3,
+        "elsewhere": 5
+      }
+    }
+  }
+}

@@ -90,6 +90,43 @@ def test_expected_cells_skip_merged_categories():
     assert [c.header for c in cells] == [True, True, True, True, True, False, True, False]
 
 
+UNIT_TABLE = {
+    "page": 1,
+    "header_row": ["Department", "FY2025-26 adopted ($M)", "Change (%)"],
+    "rows": [["Roads", "$24.9M", "+10.8%"]],
+}
+
+
+def test_unprinted_notes_come_off_header_cells_only():
+    cells = scoring.expected_cells(UNIT_TABLE, ["($M)", "(%)"])
+    assert [c.value for c in cells if c.header] == ["Department", "FY2025-26 adopted", "Change"]
+    assert [c.value for c in cells if not c.header] == ["Roads", "$24.9M", "+10.8%"]
+    assert [c.value for c in scoring.expected_cells(UNIT_TABLE) if c.header][1] == "FY2025-26 adopted ($M)"
+
+
+def test_a_note_the_header_does_not_end_with_changes_nothing():
+    assert scoring.printed_header("Fees (per term)", ["($M)", "(%)"]) == "Fees (per term)"
+    assert scoring.printed_header("Change (%) total", ["(%)"]) == "Change (%) total"
+
+
+def test_notes_apply_to_the_sample_they_are_listed_for():
+    listed = {"file": "pdfs/01_county_budget_summary.pdf", "tables_expected": [UNIT_TABLE]}
+    other = {"file": "pdfs/02_college_fee_schedule.pdf", "tables_expected": [UNIT_TABLE]}
+    assert "fy2025-26 adopted" in scoring.key_strings(listed)
+    assert "fy2025-26 adopted ($m)" in scoring.key_strings(other)
+    cells = [
+        {"row": 0, "column": 0, "text": "Department", "kind": "columnHeader"},
+        {"row": 0, "column": 1, "text": "FY2025-26 adopted", "kind": "columnHeader"},
+        {"row": 0, "column": 2, "text": "Change", "kind": "columnHeader"},
+        {"row": 1, "column": 0, "text": "Roads", "kind": "rowHeader"},
+        {"row": 1, "column": 1, "text": "$24.9M", "kind": "content"},
+        {"row": 1, "column": 2, "text": "+10.8%", "kind": "content"},
+    ]
+    printed = result([], [{"id": "t", "page": 1, "cells": cells}])
+    assert scoring.table_scores(listed, printed) == ({"found": 6, "of": 6}, {"found": 3, "of": 3})
+    assert scoring.table_scores(other, printed) == ({"found": 4, "of": 6}, {"found": 1, "of": 3})
+
+
 def test_same_cell_reads_currency_and_dashes():
     assert scoring.same_cell(118, "$118")
     assert scoring.same_cell(None, "—")

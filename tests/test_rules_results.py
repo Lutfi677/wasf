@@ -2,6 +2,7 @@ import json
 import pathlib
 
 import pytest
+import recorded_font
 
 from core.extract import pdf_lines
 from core.structure import blocks
@@ -33,11 +34,13 @@ def test_rules_cover_all_eight_samples_with_counts_only():
                 assert value["percent"] == expected, name
 
 
-def test_rules_are_reproduced_for_samples_that_do_not_depend_on_the_arabic_font():
+def test_rules_are_reproduced_for_every_sample_the_arabic_font_allows():
     generated()
+    recorded_font.require_in_ci()
     fresh = run_rules.run()["samples"]
     committed = load(RULES)["samples"]
-    for sample in FONT_INDEPENDENT:
+    samples = sorted(committed) if recorded_font.uses_recorded_font() else FONT_INDEPENDENT
+    for sample in samples:
         assert fresh[sample] == committed[sample], sample
 
 

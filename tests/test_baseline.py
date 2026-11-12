@@ -11,6 +11,7 @@ BASELINE = ROOT / "eval" / "baseline.json"
 TARGETS = ROOT / "eval" / "targets.json"
 ANCHORS = ROOT / "eval" / "harness" / "order_anchors.json"
 EXCLUSIONS = ROOT / "eval" / "harness" / "text_exclusions.json"
+UNPRINTED = ROOT / "eval" / "harness" / "unprinted_notes.json"
 SAMPLES = ROOT / "eval" / "samples"
 MANIFEST = SAMPLES / "answer_key" / "manifest.json"
 TOOLS = {"pdfminer.six", "pypdfium2", "pdftotext"}
@@ -75,6 +76,28 @@ def test_every_exclusion_is_a_key_string_of_its_sample():
         strings = scoring.key_strings(by_name[name])
         kept = scoring.key_strings(by_name[name], excluded)
         assert len(strings) - len(kept) == len(excluded)
+
+
+def test_every_unprinted_note_ends_a_key_header_cell_of_its_sample():
+    by_name = {pathlib.PurePosixPath(entry["file"]).name: entry for entry in manifest()["documents"]}
+    for name, notes in load(UNPRINTED).items():
+        headers = [
+            str(cell.value)
+            for table in by_name[name]["tables_expected"]
+            for cell in scoring.expected_cells(table)
+            if cell.header
+        ]
+        for note in notes:
+            assert any(header.endswith(note) for header in headers), (name, note)
+
+
+def test_no_unprinted_note_is_printed_on_its_page():
+    manifest()
+    for name, notes in load(UNPRINTED).items():
+        result = extractors.pypdfium2_result(SAMPLES / "pdfs" / name)
+        text = " ".join(block["text"] for block in result["blocks"])
+        for note in notes:
+            assert note not in text, (name, note)
 
 
 @pytest.mark.parametrize("tool", ["pdfminer.six", "pypdfium2"])

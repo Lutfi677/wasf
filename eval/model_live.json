@@ -1,0 +1,93 @@
+{
+  "analyzer": "prebuilt-layout",
+  "samples": {
+    "01": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    },
+    "02": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    },
+    "03": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    },
+    "04": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    },
+    "05": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    },
+    "06": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    },
+    "07": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    },
+    "08": {
+      "validates": true,
+      "identical": true,
+      "metrics_equal": true,
+      "differences": {
+        "blocks": 0,
+        "tables": 0,
+        "figures": 0,
+        "regions": 0
+      }
+    }
+  }
+}

@@ -33,3 +33,4 @@ build/
 *.egg-info/
 
 data/
+eval/fixtures/live/

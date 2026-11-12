@@ -3,33 +3,22 @@ import json
 import pathlib
 import sys
 import time
-from datetime import datetime, timezone
 from typing import Any
 
 import cu
+import support
 
 HERE = pathlib.Path(__file__).resolve().parent
-ROOT = HERE.parent.parent
-CONFIG = ROOT / "config" / "azure.env"
+ROOT = support.ROOT
 SAMPLES = ROOT / "eval" / "samples" / "pdfs"
 FIXTURES = ROOT / "eval" / "fixtures" / "cu"
 RUNS = FIXTURES / "runs.json"
-COST_LOG = ROOT / "eval" / "cost_log.jsonl"
 DEFINITIONS = {
     "wasf_bakeoff_fields": HERE / "bakeoff_analyzer.json",
 }
 ANALYZERS = ("prebuilt-layout", "prebuilt-documentSearch", *DEFINITIONS)
 RETRY_WAIT = 60
 PHASE = "2 step 4"
-
-
-def read_config(path: pathlib.Path) -> dict[str, str]:
-    values: dict[str, str] = {}
-    for line in path.read_text(encoding="utf-8").splitlines():
-        if "=" in line and not line.lstrip().startswith("#"):
-            key, value = line.split("=", 1)
-            values[key.strip()] = value.strip()
-    return values
 
 
 def fixture_path(analyzer: str, sample: str) -> pathlib.Path:
@@ -41,47 +30,12 @@ def write_json(path: pathlib.Path, data: Any) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
-def now() -> str:
-    return datetime.now(timezone.utc).isoformat(timespec="seconds")
-
-
-def token_total(usage: dict[str, Any], kind: str) -> int | None:
-    tokens = usage.get("tokens") or {}
-    found = [count for name, count in tokens.items() if name.endswith(f"-{kind}")]
-    return sum(found) if found else None
-
-
-def page_total(usage: dict[str, Any]) -> int:
-    return sum(usage.get(name) or 0 for name in ("documentPagesMinimal", "documentPagesBasic", "documentPagesStandard"))
-
-
-def log_cost(analyzer: str, usage: dict[str, Any], note: str) -> None:
-    row = {
-        "timestamp": now(),
-        "phase": 2,
-        "service": "content-understanding",
-        "deployment": analyzer,
-        "input_tokens": token_total(usage, "input"),
-        "output_tokens": token_total(usage, "output"),
-        "pages": page_total(usage),
-        "note": f"{note}; usage={json.dumps(usage, sort_keys=True)}",
-    }
-    with COST_LOG.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(row) + "\n")
-
-
-def describe(error: Exception) -> str:
-    status = getattr(error, "status_code", None)
-    code = getattr(getattr(error, "error", None), "code", None)
-    return f"{type(error).__name__} status={status} code={code}"
-
-
 def analyze_once_more_on_failure(client: Any, analyzer: str, data: bytes) -> tuple[dict[str, Any], dict[str, Any], float] | None:
     for attempt in (1, 2):
         try:
             return cu.analyze(client, analyzer, data)
         except Exception as error:
-            print(f"  attempt {attempt} failed: {describe(error)}")
+            print(f"  attempt {attempt} failed: {support.describe(error)}")
             if attempt == 1:
                 time.sleep(RETRY_WAIT)
     return None
@@ -94,7 +48,7 @@ def main() -> int:
     parser.add_argument("--refresh", action="store_true", help="call again even when a fixture exists")
     args = parser.parse_args()
 
-    config = read_config(CONFIG)
+    config = support.read_config()
     ceiling = int(config["CU_MAX_CALLS"])
     samples = sorted(path.name[:2] for path in SAMPLES.glob("*.pdf"))
     if args.sample:
@@ -116,7 +70,7 @@ def main() -> int:
 
     for analyzer in create:
         created = cu.create_analyzer(client, analyzer, json.loads(DEFINITIONS[analyzer].read_text(encoding="utf-8")))
-        log_cost(analyzer, created.get("usage") or {}, f"phase {PHASE}; create analyzer")
+        support.log_cost(analyzer, created.get("usage") or {}, f"phase {PHASE}; create analyzer")
         print(f"created analyzer {analyzer}: status {created.get('status')}")
 
     runs = json.loads(RUNS.read_text(encoding="utf-8")) if RUNS.is_file() else {"calls": {}}
@@ -128,12 +82,12 @@ def main() -> int:
             return 1
         result, usage, seconds = outcome
         write_json(fixture_path(analyzer, sample), result)
-        runs["calls"][f"{analyzer}/{sample}"] = {"recorded": now(), "seconds": round(seconds, 1), "usage": usage}
+        runs["calls"][f"{analyzer}/{sample}"] = {"recorded": support.now(), "seconds": round(seconds, 1), "usage": usage}
         runs["calls"] = dict(sorted(runs["calls"].items()))
         write_json(RUNS, runs)
-        log_cost(analyzer, usage, f"phase {PHASE}; sample {sample}")
-        print(f"{sample} {analyzer}: {seconds:.1f} s, pages {page_total(usage)}, "
-              f"input {token_total(usage, 'input')}, output {token_total(usage, 'output')}, "
+        support.log_cost(analyzer, usage, f"phase {PHASE}; sample {sample}")
+        print(f"{sample} {analyzer}: {seconds:.1f} s, pages {support.page_total(usage)}, "
+              f"input {support.token_total(usage, 'input')}, output {support.token_total(usage, 'output')}, "
               f"contextualization {usage.get('contextualizationTokens')}")
     return 0
 

@@ -1,0 +1,371 @@
+{
+  "samples": {
+    "01": {
+      "text": {
+        "found": 33,
+        "of": 33,
+        "percent": 100.0
+      },
+      "headings": {
+        "found": 6,
+        "of": 6,
+        "percent": 100.0
+      },
+      "table_cells": {
+        "found": 36,
+        "of": 36,
+        "percent": 100.0
+      },
+      "header_cells": {
+        "found": 4,
+        "of": 4,
+        "percent": 100.0
+      },
+      "language": {
+        "expected": "en",
+        "found": "en",
+        "right": true
+      },
+      "counts": {
+        "blocks": 71,
+        "tables": 1,
+        "links": 1,
+        "figures": 4,
+        "regions": 0,
+        "unmatched_service_headings": 1
+      }
+    },
+    "02": {
+      "text": {
+        "found": 27,
+        "of": 27,
+        "percent": 100.0
+      },
+      "headings": {
+        "found": 6,
+        "of": 6,
+        "percent": 100.0
+      },
+      "table_cells": {
+        "found": 66,
+        "of": 66,
+        "percent": 100.0
+      },
+      "header_cells": {
+        "found": 21,
+        "of": 21,
+        "percent": 100.0
+      },
+      "language": {
+        "expected": "en",
+        "found": "en",
+        "right": true
+      },
+      "counts": {
+        "blocks": 108,
+        "tables": 1,
+        "links": 0,
+        "figures": 0,
+        "regions": 0,
+        "unmatched_service_headings": 0
+      }
+    },
+    "03": {
+      "text": {
+        "found": 4,
+        "of": 4,
+        "percent": 100.0
+      },
+      "reading_order": {
+        "found": 10,
+        "of": 10,
+        "percent": 100.0
+      },
+      "headings": {
+        "found": 4,
+        "of": 4,
+        "percent": 100.0
+      },
+      "language": {
+        "expected": "en",
+        "found": "en",
+        "right": true
+      },
+      "counts": {
+        "blocks": 20,
+        "tables": 0,
+        "links": 0,
+        "figures": 1,
+        "regions": 0,
+        "unmatched_service_headings": 0
+      }
+    },
+    "04": {
+      "text": {
+        "found": 15,
+        "of": 15,
+        "percent": 100.0
+      },
+      "headings": {
+        "found": 8,
+        "of": 9,
+        "percent": 88.9
+      },
+      "language": {
+        "expected": "en",
+        "found": "en",
+        "right": true
+      },
+      "counts": {
+        "blocks": 40,
+        "tables": 0,
+        "links": 0,
+        "figures": 0,
+        "regions": 0,
+        "unmatched_service_headings": 0
+      }
+    },
+    "05": {
+      "text": {
+        "found": 1580,
+        "of": 1686,
+        "percent": 93.7
+      },
+      "table_cells": {
+        "found": 15,
+        "of": 15,
+        "percent": 100.0
+      },
+      "header_cells": {
+        "found": 3,
+        "of": 3,
+        "percent": 100.0
+      },
+      "parcel_lines_to_person": {
+        "found": 3,
+        "of": 3,
+        "percent": 100.0
+      },
+      "language": {
+        "expected": "en",
+        "found": "en",
+        "right": true
+      },
+      "counts": {
+        "blocks": 32,
+        "tables": 1,
+        "links": 0,
+        "figures": 0,
+        "regions": 8,
+        "unmatched_service_headings": 0
+      }
+    },
+    "06": {
+      "text": {
+        "found": 5,
+        "of": 5,
+        "percent": 100.0
+      },
+      "headings": {
+        "found": 5,
+        "of": 5,
+        "percent": 100.0
+      },
+      "language": {
+        "expected": "en",
+        "found": "en",
+        "right": true
+      },
+      "counts": {
+        "blocks": 21,
+        "tables": 0,
+        "links": 0,
+        "figures": 1,
+        "regions": 0,
+        "unmatched_service_headings": 1
+      }
+    },
+    "07": {
+      "text": {
+        "found": 801,
+        "of": 807,
+        "percent": 99.3
+      },
+      "reading_order": {
+        "found": 21,
+        "of": 21,
+        "percent": 100.0
+      },
+      "headings": {
+        "found": 6,
+        "of": 6,
+        "percent": 100.0
+      },
+      "table_cells": {
+        "found": 9,
+        "of": 15,
+        "percent": 60.0
+      },
+      "header_cells": {
+        "found": 3,
+        "of": 3,
+        "percent": 100.0
+      },
+      "language": {
+        "expected": "ar",
+        "found": "ar",
+        "right": true
+      },
+      "counts": {
+        "blocks": 54,
+        "tables": 1,
+        "links": 0,
+        "figures": 2,
+        "regions": 0,
+        "unmatched_service_headings": 0
+      }
+    },
+    "08": {
+      "text": {
+        "found": 16,
+        "of": 16,
+        "percent": 100.0
+      },
+      "counts": {
+        "blocks": 35,
+        "tables": 0,
+        "links": 0,
+        "figures": 1,
+        "regions": 0,
+        "unmatched_service_headings": 1
+      }
+    }
+  },
+  "gate": {
+    "met": 24,
+    "of": 24,
+    "open": [],
+    "rows": {
+      "01/text": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "01/headings": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "01/table_cells": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "01/header_cells": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "02/text": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "02/headings": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "02/table_cells": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "02/header_cells": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "03/text": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "03/headings": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "03/reading_order": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "04/text": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "04/headings": {
+        "target": 50,
+        "value": 88.9,
+        "met": true
+      },
+      "05/text": {
+        "target": 50,
+        "value": 93.7,
+        "met": true
+      },
+      "05/table_cells": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "05/header_cells": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "05/parcel_lines_to_person": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "06/text": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "06/headings": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "07/text": {
+        "target": 88,
+        "value": 99.3,
+        "met": true
+      },
+      "07/table_cells": {
+        "target": 50,
+        "value": 60.0,
+        "met": true
+      },
+      "07/header_cells": {
+        "target": 50,
+        "value": 100.0,
+        "met": true
+      },
+      "07/reading_order": {
+        "target": 100,
+        "value": 100.0,
+        "met": true
+      },
+      "08/text": {
+        "target": 81,
+        "value": 100.0,
+        "met": true
+      }
+    }
+  }
+}

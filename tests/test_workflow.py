@@ -10,6 +10,8 @@ FORBIDDEN = {
     "upload-artifact": re.compile(r"upload-artifact"),
     "azure/login": re.compile(r"azure/login"),
     "secrets.": re.compile(r"(?<![\w.])secrets\."),
+    "AZURE_ settings": re.compile(r"AZURE_"),
+    "FreeFont fonts": re.compile(r"fonts-freefont"),
 }
 
 
@@ -48,6 +50,17 @@ def test_python_version_meets_requires_python():
     chosen = re.search(r'python-version:\s*"(\d+)\.(\d+)"', workflow_text())
     assert chosen is not None
     assert tuple(int(part) for part in chosen.groups()) >= minimum
+
+
+def test_workflow_installs_poppler_for_the_pdftotext_test():
+    assert re.search(r"apt-get install[^\n]*\bpoppler-utils\b", workflow_text())
+
+
+def test_workflow_installs_every_extra():
+    pyproject = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+    installed = re.search(r'pip install "\.\[([^\]]+)\]"', workflow_text())
+    assert installed is not None
+    assert set(installed.group(1).split(",")) == set(pyproject["project"]["optional-dependencies"])
 
 
 def test_workflow_has_no_comment_lines():
